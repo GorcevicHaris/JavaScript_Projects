@@ -1905,6 +1905,7 @@
 // console.log(metoda('haris'));
 
 //proba
+consol
 
 
 

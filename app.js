@@ -1904,8 +1904,9 @@
 // }
 // console.log(metoda('haris'));
 
+//prob
 //proba
-consol
+
 
 
 

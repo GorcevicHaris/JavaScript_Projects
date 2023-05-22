@@ -1904,11 +1904,413 @@
 // }
 // console.log(metoda('haris'));
 
-//prob
-//proba
+
+// const myFirstObject = [
+//     {age:36,name :'haris'},
+//     {age:36,name :'hare'},
+//     {age:36,name :'haris'},
+// ]
+
+// let nadimak = (ime)=>{
+//     let objekti = myFirstObject.filter((nizovi)=>
+//        nizovi.name !== ime
+//     )
+//     return objekti
+// }
+// console.log(nadimak('hare'));
+
+///===========================================================
+
+
+// let someArray = [1,2,3,4,5,6]
+
+// let bigArray = (niz)=>{
+//   niz.forEach(element => {
+//     console.log(element);
+//   });
+//   return niz
+// }
+// bigArray(someArray)
+
+//==========================================================
+// let someArray = [1,2,3,4,32,4]
+// brojac = 0;
+
+// for(i = 0; i< someArray.length; i++){
+//   if(brojac < someArray[i]){
+  //     brojac = someArray[i]
+  //   }
+  // }
+  // console.log(brojac);
+  
+//=======================================================
+    // let numbers = [1,2,3,4,5,6,33,10]
+  // let brojac = 0
+
+  // let someArray = numbers.forEach((number)=>{
+  //   if(number >  brojac){
+  //     brojac = number 
+      
+  //   }
+  // })
+  // console.log(brojac);
+  
+  //=========================================================
+
+  // let someArray = [4,7,3,66,88,6]
+
+  // let bigArray = someArray.filter((element)=>element % 2 === 0).map((element)=> element * 10)
+  // console.log(bigArray);
+  //=====================================================================================
+  // const studenti = [
+  //   { ime: "Marko", ocena: 7 },
+  //   { ime: "Petar", ocena: 9 },
+  //   { ime: "Jana", ocena: 8 },
+  //   { ime: "Maja", ocena: 10 },
+  //   { ime: "Ana", ocena: 6 }
+  // ];
+  
+  // const prosek = studenti
+  //   .filter(student => student.ocena >= 7) // filter za studente sa ocenom 7 ili više
+  //   .reduce((suma, student) => suma + student.ocena, 0) // reduce za sabiranje ocena
+  //   / studenti.filter(student => student.ocena >= 7).length; // prosečna vrednost
+  
+  // console.log(prosek); // Output: 8.666666666666666
+  
+//  const studenti = [
+//     { ime: "Marko", ocena: 100},
+//     { ime: "Petar", ocena: 33 },
+//     { ime: "Jana", ocena: 1 },
+//     { ime: "Maja", ocena: 44 },
+//     { ime: "Ana", ocena: 6 }
+//   ];
+
+
+// const bigarray = studenti.filter((element)=> element.ocena >=7)
+// .reduce((element1,element2)=>element1 +element2.ocena,0) /studenti.filter((el)=> el.ocena >= 7).length
+
+// console.log(bigarray);
+//=================================================================================================
+
+//fizzbuzz
+//napravite niz od 10 brojeva pomnozite sa 10 i podelite
+
+
+// niz = [1,2,3,4,5,6,7,8,9,10,,11,12,13,14,15]
+
+// for(i=0;i<niz.length;i++){
+//   if(niz[i] % 5 === 0 && niz[i] % 3 === 0){
+//     console.log('fizzbuzz')
+//   }else if(niz[i] % 5 === 0){
+//     console.log('fizz');
+//   }else{
+//     console.log('buzz');
+//   }
+// }
+
+//==================================================================================
+// let niz = [1,2,3,4,5]
+
+//  niz.push(1,2)
+//  niz.unshift(9,9)
+
+//  let bigArray = niz.map((el)=> el * 8).filter((el)=> el % 3=== 0)
+
+ 
+// console.log(bigArray);
 
 
 
+// let niz =[1,2,3,4,5,6]
+
+// let somearray = niz.reduce((el1,el2)=> el2 / el1)
+
+
+// console.log(somearray);
+
+// Definirajmo objekt osobe
+// let osoba = {
+//   ime: "Ana",
+//   godine: 30,
+//   predstaviSe: function() {
+//     console.log("Pozdrav, ja sam " + this.ime + " i imam " + this.godine + " godina.");
+//   }
+// };
+
+// // Pozovimo metodu predstaviSe na objektu osoba
+// osoba.predstaviSe();
+//====================================================================================
+// let osoba = {
+//   ime: "Ana",
+//   godine: 30,
+// }
+// console.log('moje ime je ' + osoba.ime + ' i imam ' + osoba.godine +'godina');
+//=========================================================================================
+// let osoba = {
+//   ime: 'haris',
+//   age: 33,
+//   somefunction: function(){
+//     console.log('moje ime je ' + this.ime + ' i imam ' + this.age +' godina');
+//   }
+// }
+// //THIS NE RADI AKO JE ARROW FUNKCIJA MORA BITI OBICNO FUNCTION
+
+// osoba.somefunction()
 
 
 
+// let = mesec = 4;
+// switch(mesec){
+//     case 1:
+//         console.log('januar');
+//         break
+//     case 2:
+//         console.log('februar');
+//         break;
+//     case 3:
+//         console.log('mart');
+//         break;
+//     case 4:
+//         console.log('april');
+//         break;
+//     case 5:
+//         console.log('maj');
+//         break;
+//     case 6:
+//         console.log('jun');
+//         break;
+//     case 7:
+//         console.log('jul');
+//         break;
+//     case 8:
+//         console.log('avgust');
+//         break;
+//     case 9:
+//         console.log('septembar');
+//         break;
+//     case 10:
+//         console.log('oktobar');
+//         break;
+//     case 11:
+//         console.log('novembar');
+//         break;
+//     case 12:
+//         console.log('decembar');
+//         break;
+// }
+
+//===============================================================
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let evenNumbers = numbers.reduce((accumulator, currentValue) => {
+//   if (currentValue % 2 === 0) {
+//     accumulator.push(currentValue);
+//   }
+//   return accumulator;
+// }, []);
+
+// console.log(evenNumbers);
+// //==============================================
+// let covek = {
+//   ime: 'haris',
+//   prezime:'gorcevic',
+//   age:33,
+//   somefunction: function (){
+//     console.log(this.ime);
+//     }
+// }
+// covek.somefunction()
+
+//==========================================
+
+// let SomeObjectstInArray =[
+//   {ime:'hare',age:33},
+//   {ime:'neja',age:32},
+//   {ime:'haringa',age:18}
+// ]
+
+
+// let RandomName = (ime,godine)=>{
+//   let Niz = SomeObjectstInArray.filter((nizovi)=>
+//   nizovi.age !== ime && nizovi.age !== godine
+//   )
+//   return Niz
+// }
+
+// console.log(RandomName(33,18));
+// //OVDE SMO UPISALI U RANDOM NAME NEKO RANDOM IME I GODINE I PROVERILO JE DA LI TO IMA U NIZU I AKO IMA IZBRISACE SE NIZ CEO
+
+
+//===============================================================================================================
+
+// const ime = 'haris'
+
+// const user = {
+//   ime,
+//   prezime: 'gorceivc',
+//   skills: ['html','cs']
+// }
+// console.log(user);
+
+// const skillsarray = user.skills
+// skillsarray.pop()
+
+// console.log(user);
+// //OVDE SMO NAPRAVILI NOVI ARRAY SKILLSARRAY I IZBACII ZADNJI IZ NIZA SKILLS SAD TO VAZI I ZA USER I ZA SKILLS
+//===============================================================================================================
+
+// const classroomn = {
+//   ime: 'haris',
+//   prezime: 'gorcevic',
+//   profesor: 'aldin',
+//   ucenici: [
+//     {
+//       name:'redzi',
+//       profession:'player basket'
+//     },
+//     {name:'bronja',profession: 'autolimar'}
+//   ],
+//   sayhello(){
+//     console.log('hello'+ classroomn.ucenici[0].name);
+
+//   }
+// }
+// classroomn.sayhello()
+
+// const nasniz = classroomn.ucenici.map((el)=>{
+//   return {
+//     name: el.name
+//   }
+
+// }
+// )
+// console.log(nasniz);
+// // console.log('hello'+ classroomn.ucenici[1].name) ova linija govori ovo [1].name to vazi samo za name sto znaci da je prvi index 
+// //ovde bio redzi a drugi bronja
+
+//=============================================
+
+// const classroomn = {
+//   ime: 'haris',
+//   prezime: 'gorcevic',
+//   profesor: 'aldin',
+//   ucenici: [
+//     {
+//       name:'redzi',
+//       profession:'player basket'
+//     },
+//     {name:'bronja',profession: 'autolimar'}
+//   ],
+//   sayhello(){
+//     // console.log('hello'+ classroomn.ucenici[0].name);
+
+//   }
+// }
+
+// const nasniz = classroomn.ucenici
+// const noviniz = nasniz.map((el)=>{
+//   return{
+//     name:el.name
+//   }
+//   })
+// console.log(noviniz);
+//OVDE SAMO VRACAMO IMENA IZ UCENICI 
+//===================================
+//OVO JE DRUGI PRIMER ZA RAD
+// const nasniz = classroomn.ucenici
+// const noviniz = nasniz.map((el)=>{
+//   return{
+//     name:el.name,
+//     profession: el.profession
+//   }
+//   })
+// console.log(noviniz);
+// //OVO VRACA SE UCENIKE I NAME I PROFESION
+//================================================
+// let somearray = [
+//   {name:'hare',prezime:'gorcevic',age:33},
+//   {name:'hamza',prezime:'gorce',age:33},
+//   {name:'fare',prezime:'gicic',age:23}
+// ]
+
+// newarray = somearray.map((el)=>{
+//   return{name:el.name,prezime:el.prezime,age:el.age}
+// })
+// console.log(newarray[0]);
+// console.log(newarray[1]);
+// console.log(newarray[2]);
+// console.log(newarray);
+
+//========================================================
+
+// let SomeObject = {
+//   name:'haris',
+//   username:'gorcevic',
+//   age: 18,
+//   covek:[{name:'hamza',prezime:'gorcevic',age:19}],
+//   newarray(){
+//   console.log('moje ime je '  + this.covek[0].name,
+//  ' i  moje prezime je ' + this.covek[0].prezime + 'imam ' + this.covek[0].age, ' godina',
+//  'moj brat se zove ' + this.name + ' preziva se isto kao i ja ' + this.username + ' i ima ' + this.age + ' godina '
+ 
+//  )
+//   },
+// };
+
+// SomeObject.newarray()
+
+//=================================================================
+
+// let SomeObjectstInArray = [
+//   {name:'haris',username:'gorcevic',age:18},
+//   {name:'hamza',username:'gorcevic',age:22},
+//   {name:'denis',username:'gorcevic',age:11},
+// ]
+
+// let randomname = ((ime,godine)=>{
+//   newarray = SomeObjectstInArray.filter((niz)=>
+//   ime !== niz.age && godine !== niz.age
+//   )
+//   return newarray
+// }
+// )
+// console.log(randomname(18,22));
+
+//==========================================================================
+
+// let someArray = [1,2,3,4,2,33,1]
+//   someArray.sort((a,b)=> a- b)
+// //AKO JE A MANJE OD B OSTAJE NA ISTO MESTO A AKO JE A VECE OD  B A IDE NA MESTO GDE JE BILO B
+
+
+// console.log(someArray);
+
+//=====================================================
+
+// let SomeObjectstInArray = [
+//   {name:'haris',username:'gorcevic',age:18},
+//   {name:'hamza',username:'gorcevic',age:22},
+//   {name:'denis',username:'gorcevic',age:11},
+// ]
+
+// SomeObjectstInArray[2]['posao'] = ['html css, javascript, react']
+// console.log(SomeObjectstInArray);
+// U OBJEKTE PUSH METODA NE RADI ALI IMAMO DRUAGIJI NACIN KAO STO JE U 2297 LINIJI ZNACI NA TAJ NIZ
+//KOJI ZELIMO DA DODAMO SAMO STAVI KEY DA NAM BUDE U OVOM SLUCAJU POSAO I VREDNOST HTML... NA TAJ NACIN SE DODAJE
+//A AKO ZELIMO DODATI NEKI NIZ ISTI NACIN SAMO UMESTO BEZ ZAGRADA STAVLJAMO UGLASTE ZAGRADE
+
+//============================================================================================================
+
+
+// let somearray = {
+//   name:'haris',
+//   username:'gorcevic',
+//   age:18,
+//   ucenici:{name:'hamza',username:'gorcevic',age:19}
+// }
+
+// somearray.ucenici['job'] = 'html css , js ,react'
+// console.log(somearray);
+// //NA ISTI NACIN DODAJEMO I U OBJEKAT 
+// // OVDE SMO UBACILI U JEDAN OBJEKAT JOS JEDAN OBJEKAT I U TAJ OBJEKAT DODALI JOB

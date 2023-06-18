@@ -759,7 +759,6 @@
 //       niz[y] = broj;
 //       //ovde smo stavili ovo ovako let broj = niz[i] jer ako bi stavili niz [y] = niz[i] 
 //       // i bi izgubila vrednost jer se pise i=y pa odma dole y = i i ne bi imalo smisla
-//       // 
 //     }
 //   }
 // }
@@ -972,7 +971,7 @@
 // console.log(niz);
 
 
-// SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE
+// `SLICE` SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE SLICE
 
 // let arr = [1, 2, 3, 4, 5];
 // let newArr = arr.slice(1,3); // Novi niz koji uključuje elemente od indeksa 1 do 3
@@ -985,7 +984,7 @@
 // console.log(arr); 
 
 
-//da ubacimo posle r a
+// //da ubacimo posle r a
 
 // let ime = 'haris'
 // let removedElements = ime.slice(0,3)
@@ -1520,14 +1519,15 @@
 // console.log(proizvodmap);
 
 // // // //==================================================================================
+
+//OVDE JE OVO EL , I EL JE ELEMENT I JE INDEX A BIGEL JE SVAKI NIZ OD MATIRCE I SAD NA SVAKI DRUGI INDEX POVECAVAMO
+//ELEMENT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // const matrica = [
 //   [1,2,3,1,1,1,1,3,4,5,7,7,],
 //   [4,5,6],
 //   [7,8,9],
 //   [1,2,3]
 // ]
-// //OVDE JE OVO EL , I EL JE ELEMENT I JE INDEX A BIGEL JE SVAKI NIZ OD MATIRCE I SAD NA SVAKI DRUGI INDEX POVECAVAMO
-// //ELEMENT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // const bigfunction = matrica.map((bigel) =>
 //    bigel.map((el,i)=>{
 //     if(i % 2 ===0){
@@ -1566,13 +1566,12 @@
 // console.log(bigfunction);
 
 
-
 //====================================================================
 // const somearray = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // const bigfunction = somearray.map((element, indeks) => {
   
-//   if (indeks % 2 !== 0) {
+//   if (indeks % 2 ===0) {
 //     return element + 2;
 //   }
 //   return element;
@@ -2516,7 +2515,6 @@
 //    el1.push(el2.model,el2.year)
 //    return el1
 // },[])
-// //OVO DODAJEMO SAMO U NIZ
 // console.log(somecars);
 
 //backtick
@@ -2525,7 +2523,7 @@
 // const nasobjekat ={
 //   name:'haris',
 //   duks:'zeleno',
-//   age: 18
+//   age: 18 
 // }
 
 // function ourfistcallfunction(argumentfirst,argumentsecond) {
@@ -2585,7 +2583,7 @@
 // )
 
 // console.log(randomid(3));
-//=======================================================
+// //=======================================================
 
 // const users = [
 //   {
@@ -2603,13 +2601,11 @@
 //     console.log('punoletans si')
 //     console.log(`presao si ${this.godine - 18} godina od pulonetstva`);
 //   }else{
-//     console.log(`trebati jos ${18-this.godine} do punoletstva`);
+//     console.log(`treba ti jos ${18-this.godine} do punoletstva`);
 //   }
 // }
-
-// agefunction.call(users[1])
-
-//=======================================================================
+// agefunction.call(users[0])
+// //=======================================================================
 
 // const nasobjekat = {
 //   name:'haris',
@@ -2755,24 +2751,1729 @@
 // console.log(somefunction);
 
 //===================================================================================================
-
-// function createuser(){
+//CLASS CLASS CLASS CLASS CLASS CLASS CLASS CLAS CLAS CLASS CLASS CLASS CLASS CLASS CLAS CLASS
+// OVO JE JEDAN OD NACINA VRACA OBJEKTA POMOCU FUNKCIJE
+// function createuser(el){
 //   return{
-//     name:'haris'
+//     name:el
+//   }
+// }
+// console.log(createuser('haris'));
+// ===========================================
+//PRVI NACI RADA
+// class Ucenik  {
+//   constructor(ime,prezime,godine){
+//     this.name = ime;
+//     this.username = prezime;
+//     this.age = godine
+//   }
+// }
+// const newobject = new Ucenik('haris','gorcevic',18)
+// console.log(newobject);
+//====================================================
+// //OVO JE DRUGI NACIN RADA
+// class Ucenik  {
+//   constructor(){
+//     this.name = 'haris'
+//     this.username = 'gorcevic'
+//     this.age = 33
+//     this.job = 'js'
+//   }
+// }
+// const newucenik = new Ucenik()
+// console.log(newucenik);
+
+//=========================================================
+// class Covek {
+//   constructor(ime,prezime,godine){
+//     this.name = ime;
+//     this.username = prezime;
+//     this.age = godine
+//   }
+// }
+// let isticovek = new Covek('hare','gorcevic',18)
+// console.log(isticovek);
+
+//==============================================================
+
+// let someObjects = {
+//   name: 'haris',
+//   username: 'gorcevic'
+// };
+
+// let someObj = {
+//   name: 'hamza',
+//   username: 'gorco'
+// };
+
+// let values = Object.values(someObjects); // [ 'haris', 'gorcevic' ]
+
+// let keys = Object.keys(someObjects); // [ 'name', 'username' ]
+
+// function result(){
+//   return{
+//     [keys[0]]:values[0]
+//   }
+// }
+// console.log(result());
+// //OVDE CES RETURN DA VRATI OBJEKAT KOJI VRACA KEYS[0] TO CE BITI U OVOM SLUCAJU NAME A VALUES[0] CE BITI IZ DRUGOG OBJEKTA HAMZA
+//=================================================================================
+
+// let someObjects = {
+//   name: 'haris',
+//   username: 'gorcevic'
+// };
+
+// let someObj = {
+//   name: 'hamza',
+//   username: 'gorco'
+// };
+// let novikeys = Object.keys(someObjects)
+// let novivalue = Object.values(someObj)
+// function backing(){
+//   return{
+//     [novikeys[0]]:novivalue[0]
+//   }
+// }
+// console.log(backing());
+
+
+// let someobjecat = {
+//   name:'haris',
+//   s:2
+// }
+
+// // let someobjectat2 = {
+// //   ime:'haris'
+// // }
+
+
+// // let objkeys = Object.keys(someobjecat)
+// // let objvalue = Object.values(someobjectat2)
+
+// // somefunction = ()=>{
+// //   return{
+// //     [objkeys[0]]:objvalue[0]
+// //   }
+// // }
+// // console.log(somefunction());
+
+
+// // class Skola {
+// //   constructor(ime,prezime,godine){
+// //     this.name = ime
+// //     this.username = prezime
+// //     this.godine = godine
+// //   }
+// // }
+// // let novaskola = new Skola('haris','gorcevic', 18)
+
+
+// // console.log(novaskola);
+
+// //================================================
+// class Bus{
+// constructor(sedista,boja){
+//   this.seats = sedista;
+//   this.color = boja;
+// }
+// hellobus(){
+//   console.log('caoo')
+// }
+
+// changecolor(newcolor){
+//   this.color = newcolor
+// }
+// getColor(){
+//   return this.color
+// }
+// getcoloragain(bojaa){
+//   this.changecolor = bojaa
+// }
+// }
+// const lasta = new Bus(55,'zelena')
+
+// console.log(lasta);
+
+// lasta.hellobus();
+
+// lasta.changecolor('zuta')
+// console.log(lasta);
+// lasta.getcoloragain('braon')
+
+// console.log(lasta);
+
+// const bojaAutobusa = lasta.getColor();
+// console.log(bojaAutobusa);
+
+
+
+// class Pet {
+//   legNum;
+//   tail;
+
+//   constructor(noge,rep){
+//     this.legNum = noge;
+//     this.tail = rep;
 //   }
 // }
 
-// console.log(createuser());
+// class Cat extends Pet {
+//   name;
+//   color;
+//   constructor(noge,rep,ime,boja){
+//     super(noge,rep);
+//     this.name = ime
+//     this.color = boja
+//   }
+//   }
+
+// class Dog extends Cat{
+//   constructor(noge,rep,ime,boja){
+//     super(noge,rep,ime,boja)
+//   }
+// }
+
+// const ourCat = new Cat (4,'yes','sladjan','bela')
+// const ourDog = new Dog(4,'yes','sladjana','grey')
+// console.log(ourCat);
+
+
+//3 klase da se izvuce njiovo ime status jel ozenjen il nije yes or no i da pozovemo njihovu super moc trevor michael
+//=================================================================================================================
+// //DOMACI
+// class GtaV{
+//   ime;
+//   porodica;
+//   supermoc
+//   constructor(name,family,superpower){
+//     this.ime = name
+//     this.porodica = family
+//     this.supermoc = superpower
+//   }
+// }
+
+// class Franklin extends GtaV{
+//   constructor(ime,porodica,supermoc){
+//     super(ime,porodica,supermoc)
+//   }
+//   getpower(snaga){
+//     this.supermoc = snaga
+//   }
+// }
+// const something1 = new Franklin('frenklin','dead','rinengan')
+// console.log(something1);
+// something1.getpower('sharingan')
+// console.log(something1);
+
+
+// class Micahel extends GtaV{
+//   constructor(ime,porodica,supermoc){
+//     super(ime,porodica,supermoc)
+//   }
+//   getpower(snaga){
+//     this.supermoc = snaga
+//   }
+// }
+// const something2 = new Micahel('michael','yes','tscukujomi')
+// something2.getpower('edo tensei')
+// console.log(something2);
+
+// class Trevor extends GtaV{
+//   constructor(ime,porodica,supermoc){
+//     super(ime,porodica,supermoc)
+//   }
+//   getpower(snaga){
+//     this.supermoc = snaga
+//   }
+// }
+// const something3 = new Trevor('trevor','yes','bjakugan')
+// something3.getpower('chidori')
+// console.log(something3);
+
+//=====================================================================================================
+// class GtaV {
+//   ime;
+//   porodica;
+//   supermoc;
+//   constructor(name,family,superpower){
+//     this.ime = name;
+//     this.porodica = family;
+//     this.supermoc = superpower;
+//   }
+// }
+// //zapis DA NE BI PISALI DA PUTA THIS MOZEMO SAMO STAVITI CONSTRUCTOR IME PORODICA U SUPER MOC I POSLE KAD BUDEMO PISALI
+//new Frenklin(pisemo ovde sta hode da nam bude isto kao gore samo bez this da se ne bi ponavljalo)
+
+// class Frenklin extends GtaV {
+//   constructor(ime,porodica,supermoc){
+//     super(ime,porodica,supermoc)
+//   }
+//   getpower(power){
+//     this.supermoc = power
+//   }
+// }
+// something1 = new Frenklin('Frenklin','deads','sharingan')
+// console.log(something1);
+// something1.getpower('rasengan')
+// console.log(something1);
+
+
+// class Trevor extends GtaV {
+//   constructor(ime,porodica,supermoc){
+//     super(ime,porodica,supermoc)
+//   }
+//   getpower(power){
+//     this.supermoc = power
+//   }
+// }
+
+// something2 = new Trevor('trevor','yes','rinengan')
+// console.log(something2);
+// something2.getpower('byakugan')
+// console.log(something2);
+
+// class Micahel extends GtaV {
+//   constructor(ime,porodica,supermoc){
+//     super(ime,porodica,supermoc)
+//   }
+//   getpower(power){
+//     this.supermoc = power
+//   }
+// }
+
+// something3 = new Micahel('Michael','yes','tsukujomi')
+// console.log(something3);
+// something3.getpower('edo tensei')
+// console.log(something3);
+
+// ================================================================
+
+// let someobjec  = [
+//   {name:'haris'},
+//   {family:'yes'},
+//   {username:'gorcevic'}
+// ]
+
+
+// someobjec.push({age:33})
+// console.log(someobjec);
+// //DODAVANJE NEKOG OBJEKTA NA KRAJU OBJEKTA
+//==================================================================================
+
+// let someobjec  = [
+//   {name:'haris'},
+//   {family:'yes'},
+//   {username:'gorcevic'}
+// ]
+
+// someobjec[0]['job'] = ['js and react']
+// console.log(someobjec);
+//=======================================================================================
+
+// let someobjecat = {
+//   name:'haris',
+//   covek:{username:'gorcevic'}
+// }
+// someobjecat.covek['job'] = 'html css'
+// console.log(someobjecat);
+
+//==========================================================================
+
+// class Someobject {
+  
+//   #name;
+//   #username;
+//   constructor(ime,prezime){
+//     this.#name = ime;
+//     this.#username = prezime;
+
+//   }
+// }
 
 
 
-class Telefon {
-  constructor(el1,el2,el3){
-    this.marka = el1
-    this.gb = el2
-    this.model = el3
-  }
-}
 
-const noviobj = new Telefon('ajfon',64,'apple')
-console.log(noviobj);
+// something = new Someobject("asd","adssdadsa");
+
+
+// console.log(something);
+//======================================================
+
+// class NarutoAnime{
+//   name;
+//   clan;
+//   superpower;
+//   constructor(ime,klan,supermoc){
+//     this.name = ime;
+//     this.clan = klan;
+//     this.superpower = supermoc;
+//   }
+// }
+
+// class Naruto extends NarutoAnime{
+//   constructor(name,clan){
+//     super(name,clan)
+//   }
+//   getpower(power){
+//     this.superpower = power
+//   }
+// }
+// something1 = new Naruto ('naruto','selo lisca')
+// // console.log(something1);
+// something1.getpower('rasengan')
+// console.log(something1);
+
+// class Madara extends Naruto{
+//   constructor(name,clan){
+//     super(name,clan)
+//   }
+//   getpower(power){
+//     this.superpower = power
+//   }
+// }
+// something2 = new Madara('madara','uchiha')
+// // console.log(something2);
+// something2.getpower('two rinengans')
+// console.log(something2);
+
+// class Hashirama extends Naruto{
+//   constructor(name,clan){
+//     super(name,clan)
+//   }
+//   getpower(power){
+//     this.superpower = power
+//   }
+// }
+// something3 = new Madara('hashirama','selo lisca')
+// // console.log(something2);
+// something3.getpower('Laughing Buddha jutsu ')
+// console.log(something3);
+// //=========================================================
+// let someobj = [
+//   {name:'haris'},
+//   {name:'haris'}
+// ]
+// someobj[0]['job'] = 'html css'
+// console.log(someobj);
+//========================================================
+// let someobj = {
+//   name:'hare'
+// }
+// someobj['job'] = 'posao'
+// console.log(someobj);
+//////////////////////////////////////////////////////////////////
+
+//==================================================================
+// let somearray = [1,2,5,7,11,5]
+// let somefunction = somearray.map((el,index)=>{
+//   if(index % 2 ===0){
+//     return el + 100
+//   }else{
+//     return el - 100
+//   }
+// })
+// console.log(somefunction)
+// //ako hocemo na svaki 
+// //==========================================================================
+// class Macak {
+//   ime;
+//   noge;
+//   rasa;
+//   constructor(name,legs,race){
+//     this.ime = name;
+//     this.noge = legs;
+//     this.rasa = race
+//   }
+// }
+// something1 = new Macak('mauri','ima 4','rasa')
+// console.log(something1);
+
+// class Pas extends Macak {
+//   constructor(ime,noge,rasa){
+//     super(ime,noge,rasa)
+//   }
+// }
+// something2 = new Pas('spajki','ima 4','woof woo')
+// console.log(something2);
+
+
+// class LeagueOfLegends {
+//   name;
+//   q;
+//   w;
+//   e;
+//   r;
+//   constructor(ime,spelq,spelw,spele,spelr){
+//     this.name = ime;
+//     this.q = spelq;
+//     this.w = spelw;
+//     this.e = spele;
+//     this.r = spelr;
+//   }
+// }
+// class Yasuo extends LeagueOfLegends{
+//   constructor(name,q,w,e,r){
+//     super(name,q,w,e,r)
+//   }
+//   getpower(powerult){
+//     this.r = powerult
+//   }
+// }
+// something1 = new Yasuo('yasuo','sorijgeton','windwol','dash','knockup')
+// console.log(something1);
+// something1.getpoower('portals')
+// console.log(something1);
+
+//==========================================================================
+
+// let somenumbers = [1,2,6,44,33,11]
+
+// let somefunction = somenumbers.map((element,index)=>{
+//   if(element % 2 == 0){
+//     return index * 100
+//   }else{
+//     return index + 10
+//   }
+// })
+
+// console.log(somefunction);
+
+//==============================================================================
+
+// class Maxi {
+//   #ime;
+//   lokacija;
+//   logo;
+//   constructor(name,location,logo){
+//     this.#ime = name
+//     this.lokacija = location
+//     this.logo = logo
+//   }
+//   get ourNama(){
+//     return this.#ime
+//   }
+// }
+
+// const maxi  = new Maxi('maxi','prvomajska','maXi')
+
+// console.log(maxi);
+
+// const imeprodavnice = maxi.ourNama
+// console.log(imeprodavnice);
+
+// class Me {
+//   ime;
+//   prezime;
+//   #godine;
+//   adresa;
+//   static brojKasa = 10
+//   constructor(name,username,age,adress){
+//     this.ime = name
+//     this.prezime = username
+//     this.#godine = age
+//     this.adresa = adress
+//   }
+//   getusername(user){
+//     this.prezime = user
+//   }
+//   setAge(age){
+//     this.#godine = age
+//   }
+// }
+
+// const ja = new Me('haris','gorcevic',18,'lug')
+// ja.getusername(11)
+// console.log(ja);
+
+// const brojkasa = Me.brojKasa
+// console.log(brojkasa);
+//======================================================================
+
+
+// class Gvido {
+//   #velicina
+//   obim
+//   sirina
+//   constructor(size, obim, sirina) {
+//     this.#velicina = size
+//     this.obim = obim
+//     this.sirina = sirina
+//   }
+//   getVelicina() {
+//     return this.#velicina;
+//   }
+//   setVelicina(velicina) {
+//     this.#velicina = velicina
+//   }
+// }
+
+// // const variable = new Gvido('10', '20', '10');
+
+// // // console.log(variable.getVelicina())
+
+
+// // variable.setVelicina('4.5')
+
+// // // console.log(variable);
+
+// // //=================================================================================
+
+// class Faraon {
+//   ime;
+//   #visina;
+//   obimglave;
+//   duzina;
+//   static usi = '20cm'
+//   constructor(name,height,obimhead,length){
+//     this.ime = name;
+//     this.#visina = height
+//     this.obimglave = obimhead
+//     this.duzina = length
+//   }
+//   getvisina(){
+//     return this.#visina
+//   }
+//   setvisina(length){
+//     this.duzina = length
+//   }
+// }
+// something1 = new Faraon('faraon','143cm','77cm','42.5')
+// console.log(something1.getvisina());
+// something1.setvisina('100')
+// console.log(something1);
+// console.log(Faraon.usi);
+// //POMOCU GET RETURNAMO SAMO VISINU AL JE ODVAJAMO KAO PRIVATNU
+// // POMOCU SET NAMESTAMO STA CE DA BUDE NESTO IZ OBJEKTA ODREDJUJEMO MU VREDNOST TJ MENJAMO
+// // //STATIK ODVAJA NEKU VREDNOST IZ OBJEKTA KOJU POZOVEMO KAO GLAVNI OBJEKAT . TA VREDNOST U OVOM SLUCAJU 
+// // FARAON.USI I SAMO IZBACI TU VREDNOST
+
+//// ABSTRAKCIJAABSTRAKCIJAABSTRAKCIJAABSTRAKCIJAABSTRAKCIJAABSTRAKCIJAABSTRAKCIJA
+
+// class User {
+//   name;
+//   height;
+//   width;
+//   age;
+//   constructor(ime,visina,sirina,godine){
+//     this.name = ime
+//     this.height = visina
+//     this.width = sirina
+//     this.age = godine
+//   }
+//   checkUser(){
+//     if(this.height > 170 && this.age > 18){
+//       console.log('izlazi odavde')
+//     }else{
+//       console.log('bujrum te');
+//     }
+//   }
+// }
+
+// const something = new User('haris',13,'50cm',15)
+// console.log(something);
+
+// // console.log(something.checkUser())
+// something.checkUser()
+
+
+
+//================================================================
+// let ucenik1 = 'haris'
+// let ucenik2 = 'dzenis'
+// let ucenik3 = 'tarik'
+
+// let godineucenika1 = 25522
+// let godineucenika2 = 22252
+// let godineucenika3 = 3022
+
+// if(godineucenika1 > godineucenika2 && godineucenika1 > godineucenika3 && godineucenika2 > godineucenika3){
+//   console.log(`${ucenik1} je najveci a ${ucenik2} je srednji i  ${ucenik3} je najmladji`);
+// }else if(godineucenika2 > godineucenika1 && godineucenika2 > godineucenika3 && godineucenika3 > godineucenika1){
+//   console.log(`${ucenik2} je najveci a ${ucenik3}je srednji i  ${ucenik1} je najmladji` );
+// }else if(godineucenika3 > godineucenika1 && godineucenika3 > godineucenika2 && godineucenika1 > godineucenika2){
+//   console.log(`${ucenik3} je najveci a ${ucenik1} je srednji a ${ucenik2} je najmladji`);
+// }else if(godineucenika1 > godineucenika2 && godineucenika1 > godineucenika3 && godineucenika3 > godineucenika2){
+//   console.log(`${ucenik1} je najveci a ${ucenik3} je srednji i  ${ucenik2} je najmladji`);
+// }else if(godineucenika2 > godineucenika1 && godineucenika2 > godineucenika3 && godineucenika1 > godineucenika3){
+//   console.log(`${ucenik2} je najveci a ${ucenik1}je srednji i  ${ucenik3} je najmladji` );
+// }else if(godineucenika3 > godineucenika1 && godineucenika3 > godineucenika2 && godineucenika2 > godineucenika1){
+//   console.log(`${ucenik3} je najveci a ${ucenik2} je srednji a ${ucenik1} je najmladji`);
+// }
+//=================================================================================
+
+// console.log(`${ucenici[0].ime} je najstariji, ${ucenici[1].ime} je srednji, a ${ucenici[2].ime} je najmlađi.`);
+
+
+
+
+
+// let ucenici = [
+//   { ime: 'haris', godine: 166},
+//   { ime: 'dzenis', godine: 262 },
+//   { ime: 'tarik', godine: 272 }
+// ];
+
+// ucenici.sort((a, b) => b.godine - a.godine);
+// ////SORT FUNKCIONISE TAKO STO OD JEDNOG ARGUMENTA ODUZMEMO DRUGI I SAD KOJI JE VECI STAVLJA GA NA PRVO MESTO I TAKO
+// //// REDOM I DE
+// console.log(`${ucenici[0].ime} je najveci ${ucenici[1].ime} je srednji i ${ucenici[2].ime} je najmladji`);
+
+//===============================================================================================
+// let somenumbers = [4,85,5,6,8]
+
+// let somefilter = somenumbers.filter((el)=> el % 2 === 0 )
+
+// console.log(somefilter);
+// let ucenici = {
+//   podaci: [
+//     { ime: 'haris', godine: 166 },
+//     { ime: 'dzenis', godine: 262 },
+//     { ime: 'tarik', godine: 272 }
+//   ],
+//   sortirajPoGodinama: function() {
+//     this.podaci.sort((a, b) => b.godine - a.godine);
+//   },
+//   ispisiImenaIGodine: function() {
+//     this.podaci.forEach(ucenik => {
+//       console.log(`${ucenik.ime} ima ${ucenik.godine} godina.`);
+//     });
+//   }
+// };
+
+// ucenici.sortirajPoGodinama();
+// ucenici.ispisiImenaIGodine();
+
+//==========================================================================================
+// let ucenici =[
+//   {name:'haris',age:18},
+//   {name:'dzenis',age:23},
+//   {name:'tarik',age:25}
+// ]
+
+// ucenici.sort((a,b) => b.age - a.age)
+
+// console.log(`${ucenici[0].name} je najveci ${ucenici[1].name} je srednji ${ucenici[2].name} je najmanji`);
+// let radnomnumbers = [5,2,100,2200,3]
+// let somepusharray = []
+
+// for(i=radnomnumbers.length - 1; i > 0; i--){
+//   console.log(radnomnumbers[i]);
+// }
+// console.log(somepusharray.push(radnomnumbers));
+// somepusharray.push(radnomnumbers)
+// console.log(somepusharray);
+
+
+// let maxnumber =[-1,-4,-6,-3,-22,-11]
+
+// pomocna = 0
+
+// for(i=0;i<maxnumber.length;i++){
+//   if(maxnumber[i] > pomocna){
+//     pomocna = maxnumber[i]
+//   }
+// }
+// console.log(pomocna);
+
+// let somenumbers = [2,55,3,2,100,5]
+// let pusharray = []
+
+// for(i = somenumbers.length -1; i >0;i--){
+//   pusharray.push(somenumbers[i])
+// }
+// // pusharray.push(somenumbers[i])
+// console.log(pusharray);
+// //=======================================================================
+// const products = [
+//   {
+//   id: 1,
+//   name: "T-shirt",
+//   qty: 1,
+//   price_per_unit: 100,  
+// },
+// {
+//   id: 2,
+//   name: "Sneakers",
+//   qty: 2,
+//   price_per_unit: 300,
+// },
+// {
+//   id: 3,
+//   name: "Necklace",
+//   qty: 5,
+//   price_per_unit: 125,
+// }
+// ]
+// const calTotal = (arr) => {
+//   const productsWithTotal = arr.map((el) => {
+//     return {
+//       ...el,
+//       total: el.qty * el.price_per_unit,
+//     };
+//   });
+
+//   const total = productsWithTotal.reduce((previous, current) => {
+//     return previous + current.total;
+//   },0);
+
+//   console.log(productsWithTotal);
+
+//   return total;
+// };
+
+// console.log(calTotal(products));
+
+// =================================================================
+
+// const products = [
+//   {
+//   id: 1,
+//   name: "T-shirt",
+//   qty: 1,
+//   price_per_unit: 100,  
+// },
+// {
+//   id: 2,
+//   name: "Sneakers",
+//   qty: 2,
+//   price_per_unit: 300,
+// },
+// {
+//   id: 3,
+//   name: "Necklace",
+//   qty: 5,
+//   price_per_unit: 125,
+// },
+// ]
+
+// let somefunction = products.map((el)=>{
+// return el.price_per_unit * el.qty
+// })
+// console.log(somefunction);
+// let something = somefunction.reduce((previous,current)=>{
+//  return  previous + current
+// })
+// console.log(something);
+//========================================================================
+// someobject = [
+//   {name:'haris',username:'gorcevic'},
+//   {name:'faris',username:'gorcevic'}
+
+// ]
+// let nekoime = (name)=>{  
+//   nekiarray = someobject.filter((nizovi)=>{
+//     return nizovi.name !== name
+//   })
+//   return nekiarray
+// }
+// console.log(nekoime('haris'));
+//==========================================================================
+// const myFirstObject = [
+//     {age:36,name :'haris'},
+//     {age:36,name :'hare'},
+//     {age:36,name :'haris'},
+// ]
+
+// let nadimak = (ime)=>{
+//     let objekti = myFirstObject.filter((nizovi)=>
+//        nizovi.name !== ime
+//     )
+//     return objekti
+// }
+// console.log(nadimak('hare'));
+//================================================
+
+// let someObjectsInArray = [
+//   {name:'hari',age:20,username:'djerlek'},
+//   {name:'haris',age: 20,username:'gorcevic'},
+//   {name:'fare',age:30,username:'mucic'}
+// ]
+// let someThing = (ime,godine,prezime)=>{
+//   somefunction = someObjectsInArray.filter((nizovi)=>{
+//     return nizovi.name !== ime && nizovi.age !== godine && nizovi.username !== prezime
+//   })
+//   return somefunction
+// }
+// console.log(someThing('hari',30,'djerlek'));
+//==========================================================================
+
+// const products = [
+//   {
+//   id: 1,
+//   name: "T-shirt",
+//   qty: 1,
+//   price_per_unit: 100,  
+// },
+// {
+//   id: 2,
+//   name: "Sneakers",
+//   qty: 2,
+//   price_per_unit: 300,
+// },
+// {
+//   id: 3,
+//   name: "Necklace",
+//   qty: 5,
+//   price_per_unit: 125,
+// }
+// ]
+
+// let something = products.map((el)=>{
+//   return el.price_per_unit * el.qty
+// })
+
+// console.log(something);
+
+// let somethinreduce = something.reduce((previous,current)=>{
+//   return previous + current
+// })
+
+// console.log(somethinreduce);
+
+// let someObjects = {
+//    name:'haris',
+//    username:'gorcevic',
+//    age: 18,
+//    funkcija:function(){
+//     console.log(`moje ime je ${this.name} prezivam se${this.username} i imam ${this.age} godina`);
+//   },
+//     somefunction:function(){
+//       console.log('i');
+//    },
+//    callBothfunction:function(){
+//     this.funkcija(),this.somefunction()
+//    }
+   
+// }
+
+// someObjects.callBothfunction()
+// // someObjects.callbothfunction()
+
+//=================================================================
+
+// someArray = [3,5,7,8,5,4,123]
+
+// let helperfunction = (a) => a + 10
+
+// customfunction = (niz,callback)=>{
+// let pomocniniz = []
+// for(let i=0; i<niz.length;i++){
+// pomocniniz.push(callback(niz[i]))
+// }
+// return pomocniniz
+// }
+// console.log(customfunction(someArray,helperfunction));
+//=================================================================
+// let someArray = [1,2,3,4,5,55]
+// somefunction = (niz)=>{
+//   for(i=0;i<niz.length;i++){
+//     niz[i]+= 10
+
+//   }
+//   return niz
+// }
+// console.log(somefunction(someArray));
+//=======================================================================
+// somearray = [1,2,3,5,77]
+
+// somemap = somearray.map((el)=> el+ 10)
+// console.log(somemap);
+//============================================================
+
+// let someObjects = [
+//   {name:'haris'},
+//   {name:'hamza'}
+// ]
+// let someRandomIme = (ime)=>{
+//    somefunction = someObjects.filter((nizovi)=>{
+//     return nizovi.name !==ime
+//   }
+//   )
+//   return somefunction
+
+// }
+// console.log(someRandomIme('hamza'));
+
+//==============================================================
+
+// let someObjects = [
+//   {name:'hare',username:'gorcevic'},
+//   {name:'hare',username:'gorco'},
+// ]
+// someObjects['job'] = 'html css, js ,react '
+// someObjects['Privatni Podaci'] = {name:'haris',username:'grle'}
+
+// console.log(someObjects);
+/////DODAVANJE OBJEKTA U U OBJEKAT///////////////////////////////////////////
+
+//==========================================================================
+// let someObjects = [
+//   {name:'haris',username:'gorcevic'},
+//   {name:'hamza',username:'gorcevic'}
+// ];
+
+// let age = 30;
+
+// for (objekat of someObjects) {
+//   objekat.age = age;
+// }
+
+// console.log(someObjects);
+//================================================================
+// let someObjects = [
+//   {name: 'haris'},
+//   {name: 'hamza'}
+// ];
+
+// let username = 'gorcevic'
+// let age = 18
+
+// let someObjekat = someObjects.map((objekat)=>{
+//   return{
+//     ...objekat,username,age
+//   }
+// })
+// console.log(someObjekat);
+/////DODAVANJE U NIZ OBJEKATA UNUTAR OBJEKTA NEKI KLJUC I VREDNOST 
+//======================================================================
+// let cars = [
+//   {id:30,model:'audi',year:2010},
+//   {id:11,model:'pasat',year:2018},
+//   {id:22,model:'mercedes',year:2020},
+//   {id:3,model:'bmw',year:2023}
+// ]
+
+// let someCars = cars.reduce((el1,el2)=>{
+//   el1.push(el2.id,el2.model)
+//   return el1
+// },[])
+// console.log(someCars);
+// /////OVDE KORISTIMO REDUCE METODU DA BI PRVI EL1 BIO NEKI NIZ  t jest []
+////// A POMOCU EL2 UBACUJEMO OVE STVARI
+//====================================================================================
+
+// let cars = [
+//   {id:30,model:'audi',year:2010},
+//   {id:11,model:'pasat',year:2018},
+//   {id:22,model:'mercedes',year:2020},
+//   {id:3,model:'bmw',year:2023}
+// ]
+
+// let someCars = cars.reduce((el1,el2)=>{
+//   somePushArray = [];
+//   somePushArray.push(el1.id,el2.model)
+//   return somePushArray
+// })
+// console.log(someCars);
+//=========================================================
+
+// let cars = [
+//   {id:30,model:'audi',year:2010},
+//   {id:11,model:'pasat',year:2018},
+//   {id:22,model:'mercedes',year:2020},
+//   {id:3,model:'bmw',year:2023}
+// ]
+
+// something = cars.map((objekat)=>{
+//   return{
+//     ...objekat,
+//     year: 2023,
+//   }
+// })
+
+// console.log(something);
+// // something[0]['year'] = 2015
+// // OVAKO MOZEMO PROMENITI SVE VALUES POMOCU YEAR:2023 ...objekat vraca ceo obj
+
+// //=========================================================
+
+// let someObject = [
+//   {name:'haris'},
+//   {name:'hamza'}
+// ]
+// let something = someObject.map((object)=>{
+//   return{
+//     ...object,age:2005,username:'gorcevic'
+//   }
+// })
+// console.log(something);
+// //====================================================
+// let cars = [
+//   {id:30,model:'audi',year:2010},
+//   {id:11,model:'pasat',year:2018},
+//   {id:22,model:'mercedes',year:2020},
+//   {id:3,model:'bmw',year:2023}
+// ]
+
+// let someReduce = cars.reduce((el1,el2)=>{
+//   el1.push(el2.model,el2.year)
+//   return el1
+// },[])
+// console.log(someReduce);
+
+//===================================================================
+
+// const matrica = [
+//   [1,2,3,1,1,1,1,3,4,5,7,7,],
+//   [4,5,6],
+//   [7,8,9],
+//   [1,2,3]
+// ]
+// const bigfunction = matrica.map((bigel) =>
+//    bigel.map((el,i)=>{
+//     if(i % 2 ===0){
+//       return el * 0
+//     }else{
+//       return el * 100
+//     }
+//   }
+//   ))
+
+// console.log(bigfunction);
+//=====================================================
+
+// let someArray = [1,2,3,4,]
+
+// let somefunction = someArray.map((el,indeks)=>{
+//   if(indeks % 2 === 0){
+//     return el + 100
+//   }else{
+//     return el + 10
+//   }
+// })
+// console.log(somefunction);
+//=========================================================
+// const matrica = [
+//   [1,2,3,1,1,1,1,3,4,5,7,7,],
+//   [4,5,6],
+//   [7,8,9],
+//   [1,2,3]
+// ]
+// let someFunction = matrica.map((big)=>{
+//   return big.map((el,index)=>{
+//     if(index % 2 === 0){
+//       return el + 100
+//     }else{
+//       return el * 0
+//     }
+//   })
+// })
+// console.log(someFunction);
+// //==========================================================
+// let niz = [9,5,3,7,1]
+
+// for(i = 0; i<niz.length; i++){
+//   for(y = 0; y<niz.length; y++){
+//     if(niz[i]<niz[y]){
+//       let broj = niz[i]
+//       niz[i] = niz[y]
+//       niz[y] = broj;
+//       //ovde smo stavili ovo ovako let broj = niz[i] jer ako bi stavili niz [y] = niz[i] 
+//       // i bi izgubila vrednost jer se pise i=y pa odma dole y = i i ne bi imalo smisla
+//     }
+//   }
+// }
+// console.log(niz);
+// =========================================================================
+
+// let niz = [1,2,3,4]
+
+// niz.sort((a,b)=> b-a)
+// console.log(niz);
+
+//================================================================
+// const strelica = (callback) =>{
+//   setTimeout(()=>{
+//       callback();
+//   },1000);
+// }
+
+// const myCallback = () =>{
+//   console.log('moja prva funkcija');
+// }
+// strelica(myCallback);
+
+//=======================================
+// const strelica = ()=>{
+//   setTimeout(()=>{
+//     console.log('gde si sta ima');
+//   },1000)
+// }
+// strelica()
+
+//==================================================
+// const profesor = {
+//   name: "Aldin",
+//   course: "Js",
+// };
+
+// const noviProfesor = {
+//   ...profesor,
+//   age: 20,
+// };
+
+// console.log(profesor);
+// console.log(noviProfesor);
+// //=========================================
+
+// const spredingArray = [512, 23, 54, 33, 115, 222];
+
+// const newSprededArray = [...spredingArray, 408, 15, 32];
+
+// console.log(spredingArray);
+// console.log(newSprededArray);
+//==================================================================
+// const objectPracticeNew = {
+//   mozak: "IMA",
+//   ruke: 2,
+//   noge: 2,
+//   bojaKose: "smedja",
+//   bojaOciju: "zelena",
+//   age: 25,
+// };
+
+// function checkUserAgept2(ime, prezime) {
+//   if (this.age > 18) {
+//     console.log("punoletan ", ime, prezime);
+//   } else {
+//     console.log("nisi ", ime, prezime);
+//   }
+// }
+
+// checkUserAgept2.call(objectPracticeNew, "Aldin", "Halilovic");
+// checkUserAgept2.apply(objectPracticeNew, ["Aldin", "Halilovic"]);
+// const nekaSestaFunckija = checkUserAgept2.bind(objectPracticeNew);
+// nekaSestaFunckija("dzelal",'dupljak');
+
+// Object.keys(objectPracticeNew);
+// Object.values(objectPracticeNew);
+// //========================================================================
+// const objectPracticeNew = {
+//   mozak: "IMA",
+//   ruke: 2,
+//   noge: 2,
+//   bojaKose: "smedja",
+//   bojaOciju: "zelena",
+//   age: 25,
+// };
+
+// function someCheckAge(ime,prezime){
+//   if(this.age >= 18 ){
+//     console.log('punoletan si ',ime,prezime);
+//   }else{
+//     console.log('nisi punoletan ',ime,prezime);
+//   }
+// }
+// someCheckAge.call(objectPracticeNew,'haris','gorcevic')
+// someCheckAge.apply(objectPracticeNew,['hamza','gorcevic'])
+// someNewBind = someCheckAge.bind(objectPracticeNew)
+// someNewBind('dzemil','dupljak')
+//======================================================================
+
+// const squaerNumbers = [5, 10, 9, 653, 84];
+// // const noviNiz = squaerNumbers.map((el) => el * el);
+// // // console.log(noviNiz);
+
+// // const tajra = noviNiz.filter((el) => el % 2 === 0);
+// // // console.log(tajra);s
+
+// squaerNumbers.map((el, i) => console.log(i, el));
+// ////SAMO ISPISUJE INDEXE I ELEMENTE 
+//==================================================================
+
+// const randomWords = [
+//   "macka",
+//   "imam",
+//   "hodza",
+//   "nemam",
+//   "pecat",
+//   "efendija",
+//   "televizor",
+// ];
+
+// const cassa = "aldin";
+
+// // console.log(cassa[3]);
+
+
+// const wordD = randomWords.filter((name) => name[0] === "p");
+
+// console.log(wordD);
+
+// const nekiRandomBrojevi = [
+//   7, 10, 18, 22, 30, 3, 15, 19, 35, 82, 10, 50, 21, 19,
+// ];
+
+//  broj veci od 18 >>>>>> * 4
+// broj veci od 18 a manji od 30 >>>>> * 8 onda podeljeno sa 4
+// ostale ne dirati
+
+// const maloTeziZadatak = nekiRandomBrojevi.map((broj) => {
+//   if (broj > 18 && broj < 30) {
+//     return (broj * 8) / 4;
+//   } else if (broj > 18) {
+//     return broj * 4;
+//   } else {
+//     return broj;
+//   }
+// });
+
+// console.log(maloTeziZadatak);
+//===================================================
+
+//broj veci od 18 >>>>>> * 4
+// broj veci od 18 a manji od 30 >>>>> * 8 onda podeljeno sa 4
+// ostale ne dirati
+
+// const nekiRandomBrojevi = [7, 10, 18, 22, 30, 3, 15, 19, 35, 82, 10, 50, 21, 19,
+// ];
+
+// const something = nekiRandomBrojevi.map((el)=>{
+//   if(el > 18 && el < 30 ){
+//     return (el * 8)/4
+//   }else if(el > 18){
+//     return el * 4
+//   }
+//   return el
+// })
+// console.log(something);
+//========================================================================
+
+// class Macak {
+//   ime;
+//   godine;
+//   rep;
+//   bojaoci;
+//   static usi = 'velike'
+//   constructor(name,age,tail,coloreye){
+//     this.ime = name;
+//     this.godine = age;
+//     this.rep = tail;
+//     this.bojaoci = coloreye;
+//   }
+// }
+// something1 = new Macak('mjauri','2','yes','black')
+// console.log(something1);
+// // console.log(Macak.usi);
+
+// class Keco extends Macak {
+//   constructor(ime,age,tail,coloreye){
+//     super(ime,age,tail,coloreye)
+//   }
+//   setrep(repp){
+//     this.rep = repp
+//   }
+//   getime(){
+//     return this.ime
+//   }
+// }
+// something2 = new Keco('dzoni','3','yes','brown')
+// console.log(something2);
+// something2.setrep('nema')
+// console.log(something2);
+// console.log(something2.getime('nesto'));
+
+//====================================================================
+// // Setup
+// const myArray = [["John", 23], ["cat", 2]];
+
+// // Only change code below this line
+// myArray + ["dog",3]
+// console.log(myArray);//
+//=====================================================
+// Setup
+// const myArray = [["John", 23], ["cat", 2]];
+
+// // Only change code below this line
+
+// myArray.pop()
+// console.log(myArray);
+
+//====================================================
+// function reusableFunction(argument){
+//   return argument
+// }
+// console.log(reusableFunction('hi'))
+// function nextInLine(arr, item) {
+//   // Only change code below this line
+  
+//   return arr,item;
+//   // Only change code above this line
+// }
+
+// // Setup
+// let testArr = [1, 2, 3, 4, 5];
+
+// // Display code
+// console.log(nextInLine(testArr, 2));
+// console.log(nextInLine(testArr,2))
+
+// function trueOrFalse(wasThatTrue,wasthatfalse) {
+//   // Only change code below this line
+//   return wasThatTrue +wasthatfalse
+  
+
+//   // Only change code above this line
+// }
+// console.log(trueOrFalse("Yes, that was true","No, that was false"))
+// //=================================================================================S
+
+// const classAges = [1,22,33,55,345,46]
+
+// const sumAges = classAges.reduce((prev,current)=> prev + current)
+
+// console.log(sumAges / classAges.length)
+//=============================================================================
+
+// const miles = [502.8,120.5,350.6,205.2,100,98,115,9000,53]
+
+// let something = miles.map((km)=> km * 1.6)
+// console.log(something)
+// let something1 = something.reduce((el1,el2)=> el1+el2)
+// console.log(something1);
+//=======================================================================
+
+// let mama = 'mamaima MomuMM';
+// let brojac = 0;
+
+// for (let i = 0; i < mama.length; i++) {
+//   if (mama[i] === 'm' || mama[i] === 'M') {
+//     brojac++;
+//   }
+// }
+
+// console.log(brojac);
+
+// //=======================================================================
+// let mama = 'mamaima Momu';
+// let brojac = 0;
+// let brojac1 = 0;
+
+// for (let i = 0; i < mama.length; i++) {
+//   if (mama[i] === 'm') {
+//     brojac++;
+//   }
+//   if (mama[i] === 'M') {
+//     brojac2++;
+//   }
+// }
+
+// console.log(brojac + brojac2);
+
+// ====================================================================
+// let someArray = "malo mi je MMm"
+// brojac = 0
+// for (let i = 0; i < someArray.length; i++) {
+//   if(someArray[i]=== 'm' ){
+//     brojac++
+//     }if(someArray[i]==='M'){
+//       brojac++
+//     }
+// }
+// console.log(brojac)
+
+// //===========================================================================
+
+// someArray = [1,2,3,4,5,6]
+// stealingArray = [];
+
+// let something = someArray.filter((el)=> el % 2 === 0)
+
+// something.unshift(10,10)
+// console.log(something);
+
+//==============================================================
+
+// const numbers2 = [2, 5, 10, 3, 4, 8];
+
+// let something = numbers2.map((el)=> el * el)
+// console.log(something);
+
+//===========================================================
+
+// const numbers = [4, 9, 16, 25, 36,100];
+
+// const rezultat = numbers.map(element => Math.sqrt(element));
+
+// console.log(rezultat);
+
+// //================================================================
+
+// let someNumbers = [1,2,3,4,5,6,7]
+
+// let something = someNumbers.map((el,index)=>{
+//   if(index=== 0 || index === 3 || index === 5){
+//     return el * el
+//   }
+//   return el
+// })
+// console.log(something);
+//=======================================================================
+
+// const words = ["element", "daljinski", "telefon", "voda", "ranac", "stolica",'hemijska'];
+
+
+// something = words.filter((el)=>{
+//   if(el[1] === 'e'){
+//     return el
+//   }
+// })
+// console.log(something);
+
+
+//==============================================================================
+// const words = ["element", "daljinski", "telefon", "vode", "ranac", "stolica",];
+// pomocna = 0
+
+// for(i=0;i<words.length;i++){
+//   for(y=0;y<words[i].length;y++){
+//     if(words[i][y]=== 'e'){
+//       pomocna++
+//       break;
+//     }
+//   }
+// }
+// console.log(pomocna)
+//=======================================================================================
+
+// let someArray = ['haris','hamza','semra','sehida','senad','muzafer']
+
+// let something = someArray.filter((el)=> el.length <=6)
+// console.log(something);
+
+//===============================================
+
+// let someArray = [true,false,false,true]
+// let something = someArray.filter((el)=> typeof el === 'boolean')
+// console.log(something);
+
+//=========================================================================
+
+// let someArray = [20,30,40,50,15,75]
+
+// let something = someArray.reduce((el1,el2)=>{
+//  el1.push(el2 <=50 && el2 % 2 ===0)
+//  return el1
+// },[])
+// console.log(something);
+// /////U OVOM SLUCAJU CE MI IZBACITI SAMO JEL TACNO ILI NIJE JER NISAM DODOA IF 
+//=============================================================================
+// let someArray = [20,30,11,13,40,50,15,75]
+
+// let something = someArray.reduce((el1,el2)=>{
+//   if(el2 <= 50 && el2 % 2 === 0){
+//   el1.push(el2)
+//   }
+//   return el1
+// },[])
+// console.log(something);
+//========================================================================
+
+// let someGodine = [18,20,33,11,17,12,44,16]
+// let something = someGodine.reduce((el1,el2)=> el1 + el2)/someGodine.length
+// console.log(something);
+//=======================================================================
+
+// let someNumbers = ['aaa', '1', 'a2', 'aa3', 'aa4', 'a5'];
+
+// let count = someNumbers.filter(el => !isNaN(parseInt(el))).length;
+
+// console.log(count);
+
+// //=====================================================================
+
+// let someNumbers = 'bla15bla2bla3bla4';
+// pomocna = 0
+// for (let i = 0; i < someNumbers.length; i++) {
+//   if (!isNaN(someNumbers[i])) {
+//     pomocna++;
+//   }
+// }
+
+// console.log(pomocna);
+
+//===============================================================
+// let someNumbers = 'bla15bla2bla3bla4/~';
+// pomocna = 0
+// for (let i = 0; i < someNumbers.length; i++) {
+//   if (isNaN(someNumbers[i])) {
+//     pomocna++;
+//   }
+// }
+
+// console.log(pomocna);
+
+//=================================================================
+
+
+// sayHelo()
+
+// function sayHelo(){
+//   console.log('john doe');
+// }
+
+//======================================================
+
+// var hisName = 'muzafer'
+
+// greetings(hisName)
+
+// function greetings(nekoIme){
+//   console.log(nekoIme, 'gde koci');
+// }
+
+//====================================================
+
+// const automobil = {
+//   ja:['vw','audi'],
+//   tajra:['golf','audi','bmw'],
+//   iman:['peugeot', 'fiat','citroen'],
+//   bronja:['pagani','mclaren','rollce roys']
+// }
+// const allCars = Object.values(automobil)
+// // console.log(allCars);
+// const drugiAutomobili = allCars.map((car)=>{
+//   car.push('d')
+//    return car
+
+// })
+// automobil.ja.push('something')
+// console.log(drugiAutomobili);
+
+//=========================================================
+
+// let ime = ".hamzaDs/das213";
+
+// let counter = 0;
+// for (i = 0; i < ime.length; i++) {
+//   if (ime[i].toUpperCase() != ime[i].toLowerCase()) {
+//     counter++;
+//   }
+// }
+// console.log(counter);
+//====================================================================
+// let someRandomName = 'haris/123'
+// pomocna = 0;
+// for (let i = 0; i < someRandomName.length; i++) {
+//   if(someRandomName[i].toUpperCase() !== someRandomName[i].toLowerCase()){
+//     pomocna++
+// }
+//   }
+// console.log(pomocna);
+/////================================================================
+
+// let someRandomName = 'harisS/123'
+// pomocna = 0;
+// for (let i = 0; i < someRandomName.length; i++) {
+//   if(someRandomName[i].toLowerCase()!== someRandomName[i]){
+//     pomocna++
+// }
+//   }
+// console.log(pomocna);
+//=========================================================
+
+
+// let someName = 'harisHamza'
+
+// for(i=0;i < someName.length;i++){
+//   if(someName[i].toUpperCase() > someName[i].toLowerCase()){
+//     console.log('ima vise uper case');
+
+//   }else{
+//     console.log('ima vise lower case');
+
+//   }
+// }
+//==============================================================
+
+// let ime = 'ana'
+
+// for (i = ime.length - 1; i>=0; i--){
+//   // console.log(ime[i]);
+// }for(y=0;y<ime.length;y++){
+//   // console.log(ime[y]);
+// }if(ime[i]===ime[y]){
+//   console.log('polindrom su ');
+// }else{
+//   console.log('nisu');
+// }
+//=============================================================
+
+
+// const automobil = {
+//   ja:['vw','audi'],
+//   tajra:['golf','audi','bmw'],
+//   iman:['peugeot', 'fiat','citroen'],
+//   bronja:['pagani','mclaren','rollce roys']
+// }
+
+// ================================================
+// someObject = [
+//   {name:'haris'},
+//   {name:'haris'},
+//   {name:'haris'}
+// ]
+
+// let something =  someObject.map((el)=>{
+//   return{
+//     ...el,age:18
+//   }
+// })
+// console.log(something);
+// //=====================================================
+// let something = {
+//   ucenici:'haris',
+//   ucenici2:'hamza'
+// }
+// something['job'] = 'html'
+// console.log(something);
+//=================================================
+// let something = {
+//   ucenici:['haris'],
+//   ucenici2:['grle']
+// }
+// // something['job']= ['blabla']
+// something.ucenici.push('nesto')
+// console.log(something);
+//=====================================================
+
+// let array = 'imeNEKOmalo';
+
+// let newArray = ''
+
+// for (i = 0; i < array.length; i++) {
+//   newArray += array[i].toUpperCase();
+// }
+
+// console.log(newArray);
+
+// //=================================================
+// let array = 'imeNEKOmalo';
+// let something = array.toLocaleLowerCase()
+// console.log(something);
+// // console.log(something = array.toLocaleLowerCase());
+
+//============================================================
+// let string = 'Pera ima devojku';
+// let lastSpaceIndex = string.lastIndexOf('');
+
+// console.log(lastSpaceIndex);
+//================================================
+// let string = 'Pera ima devojku';
+// let parts = string.split(' ');
+// let lastSpaceIndex = string.length - parts[parts.length - 1].length - 1;
+
+// console.log(lastSpaceIndex);
+//====================================================
+// let someName = ['haris gorcevic'];
+// let something = someName[0].slice(0, 3);
+// console.log(something);
+
+//=========================================
+// let somename = ['harehare']
+
+// something= somename[0].slice(0,4)
+
+// console.log(something);
+//=======================================

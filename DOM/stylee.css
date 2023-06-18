@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(145, 138, 138) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inputContainer{
+    height: 60%;
+    width: 35%;
+    background-color: rgb(192, 185, 185);
+    box-shadow: 15px 15px 10px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    gap: 10px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.inputForm{
+    height: 15%;
+    padding: 8px;
+    background-color: rgb(122, 119, 119);
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#inputText{
+    height: 40px;
+    width: 87%;
+    border-radius: 20px;
+    border: none;
+    padding-left: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#addButton{
+    width: 12%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(108, 104, 104);    
+    box-shadow: 1px 1px 10px black;
+}
+
+.div1{
+    border-radius: 10px;
+    background-color: rgb(110, 110, 110);
+    min-height: 40px;
+    width: 98%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.buttonRemover{
+    min-width: none;
+    height: 40px;
+    background-color: rgb(62, 61, 61);
+    width: 40px;
+    border-radius: 7px;
+
+}
+i{
+    font-size: 18px;
+}

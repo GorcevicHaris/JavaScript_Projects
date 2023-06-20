@@ -23,6 +23,7 @@
     margin: 1%;
     gap: 10px;
     overflow-y: scroll;
+    overflow-x: hidden;
     padding: 10px;
 }
 
@@ -45,7 +46,7 @@
     border-radius: 5px;
 }
 #addButton{
-    width: 12%;
+    width: 11%;
     height: 40px;
     border-radius: 10px;
     background-color: rgb(108, 104, 104);    

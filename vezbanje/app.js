@@ -4477,3 +4477,16 @@
 
 // console.log(something);
 //=======================================
+
+// let someArray = {
+//   ucenici:['haris','hamza'],
+//   starijiUcenici:['hamza','haris']
+// }
+// let someValues = Object.values(someArray)
+// let someThing = someValues.map((el)=>{
+//   el.push('imeneko')
+//   return [
+//     el
+//   ]
+// })
+// console.log(someThing);

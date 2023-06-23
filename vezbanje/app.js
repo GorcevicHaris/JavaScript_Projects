@@ -4490,3 +4490,34 @@
 //   ]
 // })
 // console.log(someThing);
+
+const dogs = [
+  {weights:22, curFood:250, owners: ['Alice','Bob']},
+  {weights:11, curFood:200, owners: ['Sarah','john']},
+  {weights:23, curFood:275, owners: ['sarasdfdsfh']},
+  {weights:33, curFood:340, owners: ['michael']}
+]
+
+// dogs.forEach(element => {
+//  return{
+//   ...element,
+//   somefood: element.weights ** 0.75
+//  }
+// });
+// console.log(dogs);
+
+for (let i = 0; i < dogs.length; i++) {
+  dogs[i] = {
+    ...dogs[i],
+    recomendedFood:((dogs[i].weights ** 0.75 * 28).toFixed()),
+  };
+}
+console.log(dogs);
+
+const sarahDog = dogs.find((dog)=> dog.owners.find((el)=> el ==='Sarah'))
+console.log(sarahDog);
+if(+sarahDog.recomendedFood < sarahDog.curFood * 1.1){
+  console.log('jede vise');
+}else if (+sarahDog.recomendedFood > sarahDog.curFood * 0.9){
+  console.log('jede manje');
+}

@@ -4521,3 +4521,53 @@ if(+sarahDog.recomendedFood < sarahDog.curFood * 1.1){
 }else if (+sarahDog.recomendedFood > sarahDog.curFood * 0.9){
   console.log('jede manje');
 }
+//=============================================================================================================================
+const dogs = [
+  {weights:22,trenutnaHrana:250, owners: ['Alice','Bob']},
+  {weights:11,trenutnaHrana:200, owners: ['Sarah','john']},
+  {weights:23,trenutnaHrana:275, owners: ['milan']},
+  {weights:33,trenutnaHrana:340, owners: ['michael']},
+]
+for (let i = 0; i < dogs.length; i++) {
+  dogs[i] = {
+    ...dogs[i],
+    preporucljivaHrana:((dogs[i].weights ** 0.75) * 28).toFixed()
+  };
+  console.log(dogs[i]);
+}
+console.log(dogs);
+
+const ownerEatTooMuch = dogs.filter((el)=>{
+  if(el.preporucljivaHrana >= el.trenutnaHrana * 1.1){
+    return el
+  }
+})
+// console.log(ownerEatTooMuch);
+
+for(y=0; y< ownerEatTooMuch.length; y++){
+  console.log(` ${ownerEatTooMuch[y].owners} `, ownerEatTooMuch);
+}
+
+
+const ownerEatTooLittle = dogs.filter((el)=>{
+  if(el.preporucljivaHrana <= el.trenutnaHrana * 0.9 ){
+    return el
+  }
+})
+// console.log(ownerEatTooLittle);
+
+console.log(`ovi korisnici jedu malo`);
+for(d=0; d< ownerEatTooLittle.length; d++){
+  console.log(`${ownerEatTooLittle[d].owners}`, ownerEatTooLittle);
+}
+
+const ownerEatNormal = dogs.filter((el)=>{
+  if(el.preporucljivaHrana < el.trenutnaHrana * 1.1 && el.preporucljivaHrana > el.trenutnaHrana * 0.9  ){
+    return el
+  }
+})
+// console.log(ownerEatNormal);
+for (let c = 0; c < ownerEatNormal.length; c++) {
+  console.log(` Ovi korisnici ${ownerEatNormal[c].owners} jedu normalno`, ownerEatNormal);
+
+}

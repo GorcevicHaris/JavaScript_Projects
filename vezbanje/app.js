@@ -4478,6 +4478,7 @@
 // console.log(something);
 //=======================================
 
+
 // let someArray = {
 //   ucenici:['haris','hamza'],
 //   starijiUcenici:['hamza','haris']
@@ -4490,38 +4491,49 @@
 //   ]
 // })
 // console.log(someThing);
+// //====================================================
+// let someArray = [1,2,3,4,5,]
 
-const dogs = [
-  {weights:22, curFood:250, owners: ['Alice','Bob']},
-  {weights:11, curFood:200, owners: ['Sarah','john']},
-  {weights:23, curFood:275, owners: ['sarasdfdsfh']},
-  {weights:33, curFood:340, owners: ['michael']}
-]
+// let something = someArray.map((el,index)=>{
+//   if(index % 2 === 0 ){
+//     return el + 100
+//   }else{
+//     return el + 0
+//   }
+// })
+// console.log(something);
+//==================================================================
+// const dogs = [
+//   {weights:22,trenutnaHrana:250, owners: ['Alice','Bob']},
+//   {weights:11,trenutnaHrana:200, owners: ['Sarah','john']},
+//   {weights:23,trenutnaHrana:275, owners: ['milan']},
+//   {weights:33,trenutnaHrana:340, owners: ['michael']}
+// ]
 
-// dogs.forEach(element => {
-//  return{
-//   ...element,
-//   somefood: element.weights ** 0.75
-//  }
-// });
+// for (let i = 0; i < dogs.length; i++) {
+//   dogs[i] = {
+//     ...dogs[i],
+//     preporucljivaHrana:(dogs[i].weights ** 0.75 * 28).toFixed()
+//   };
+// }
 // console.log(dogs);
 
-for (let i = 0; i < dogs.length; i++) {
-  dogs[i] = {
-    ...dogs[i],
-    recomendedFood:((dogs[i].weights ** 0.75 * 28).toFixed()),
-  };
-}
-console.log(dogs);
+// const sarahDog = dogs.find((dog)=> dog.owners.find((el)=> el ==='Sarah'))
+// console.log(sarahDog);
+// if(sarahDog.preporucljivaHrana< sarahDog.trenutnaHrana* 1.1){
+//   console.log('jede mnogo');
+// }else if (sarahDog.preporucljivaHrana> sarahDog.trenutnaHrana* 0.9){
+//   console.log('jede malo');
+// }
 
-const sarahDog = dogs.find((dog)=> dog.owners.find((el)=> el ==='Sarah'))
-console.log(sarahDog);
-if(+sarahDog.recomendedFood < sarahDog.curFood * 1.1){
-  console.log('jede vise');
-}else if (+sarahDog.recomendedFood > sarahDog.curFood * 0.9){
-  console.log('jede manje');
-}
-//=============================================================================================================================
+// let allOwnersDogs = dogs.map((el)=>{
+//   if(el.preporucljivaHrana < el.trenutnaHrana * 1.1 ){
+//     console.log('mnogo jede');
+//   }else if(el.preporucljivaHrana>el.trenutnaHrana* 0.9){
+//     console.log('jede malo');
+//   }
+// })
+//============================================================
 const dogs = [
   {weights:22,trenutnaHrana:250, owners: ['Alice','Bob']},
   {weights:11,trenutnaHrana:200, owners: ['Sarah','john']},
@@ -4535,39 +4547,46 @@ for (let i = 0; i < dogs.length; i++) {
   };
   console.log(dogs[i]);
 }
-console.log(dogs);
+// console.log(dogs);
 
+const sarahDog = dogs.find((dog)=> dog.owners.find((el)=> el ==='Sarah'))
+console.log(sarahDog);
+//=============================================================
 const ownerEatTooMuch = dogs.filter((el)=>{
-  if(el.preporucljivaHrana >= el.trenutnaHrana * 1.1){
+  if(el.preporucljivaHrana*1.1 < el.trenutnaHrana ){
     return el
   }
 })
-// console.log(ownerEatTooMuch);
-
 for(y=0; y< ownerEatTooMuch.length; y++){
-  console.log(` ${ownerEatTooMuch[y].owners} `, ownerEatTooMuch);
+  console.log(`ovi korisnici ${ownerEatTooMuch[y].owners}  jedu mnogo`, ownerEatTooMuch);
 }
 
-
+//=============================================================================
 const ownerEatTooLittle = dogs.filter((el)=>{
-  if(el.preporucljivaHrana <= el.trenutnaHrana * 0.9 ){
+  if(el.preporucljivaHrana*0.9 > el.trenutnaHrana  ){
     return el
   }
 })
-// console.log(ownerEatTooLittle);
-
-console.log(`ovi korisnici jedu malo`);
 for(d=0; d< ownerEatTooLittle.length; d++){
-  console.log(`${ownerEatTooLittle[d].owners}`, ownerEatTooLittle);
+  console.log(`ovi korisnici ${ownerEatTooLittle[d].owners} jedu malo`, ownerEatTooLittle);
 }
-
+//=======================================================================
 const ownerEatNormal = dogs.filter((el)=>{
-  if(el.preporucljivaHrana < el.trenutnaHrana * 1.1 && el.preporucljivaHrana > el.trenutnaHrana * 0.9  ){
+  if(el.trenutnaHrana < el.preporucljivaHrana * 1.1  && el.trenutnaHrana  >el.preporucljivaHrana * 0.9 ){
     return el
   }
 })
-// console.log(ownerEatNormal);
 for (let c = 0; c < ownerEatNormal.length; c++) {
   console.log(` Ovi korisnici ${ownerEatNormal[c].owners} jedu normalno`, ownerEatNormal);
 
 }
+//==================================================================================
+let ownerEatAmountFood = dogs.some((el) => {
+  return +el.preporucljivaHrana === el.trenutnaHrana * 1.1;
+});
+
+console.log(ownerEatAmountFood); // true ili false
+//========================================================
+
+let sortingDogs = dogs.sort((a,b)=> b.trenutnaHrana - a.trenutnaHrana)
+console.log(sortingDogs);

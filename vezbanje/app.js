@@ -4590,3 +4590,45 @@ console.log(ownerEatAmountFood); // true ili false
 
 let sortingDogs = dogs.sort((a,b)=> b.trenutnaHrana - a.trenutnaHrana)
 console.log(sortingDogs);
+
+
+// let someObjectsInArray = [
+//   {name:'haris'},
+//   {username:'gorcevic'}
+// ]
+// // someObjectsInArray[0]['secondname'] = 'haris'
+// // console.log(someObjectsInArray);
+// // let something = someObjectsInArray.map((el)=>{
+// //   return{
+// //     ...el,age:'nesto'
+// //   }
+// // })
+// // console.log(something);
+//===========================================================
+
+// let cars = [
+//   {id:30,model:'audi',year:2010},
+//   {id:11,model:'pasat',year:2018},
+//   {id:22,model:'mercedes',year:2020},
+//   {id:3,model:'bmw',year:2023}
+// ]
+
+// let someCars = cars.reduce((el1,el2)=>{
+//   el1.push(el2.model,el2.id)
+//   return el1
+// },[])
+// console.log(someCars);
+//========================================================
+
+// let someArray = {
+//   ucenici:['haris','hamza'],
+//   starijiUcenici:['hamza','haris']
+// }
+// let someValues = Object.values(someArray)
+// let someThing = someValues.map((el)=>{
+//   el.push('imeneko')
+//   return [
+//     el
+//   ]
+// })
+// console.log(someThing);

@@ -4632,3 +4632,57 @@ console.log(sortingDogs);
 //   ]
 // })
 // console.log(someThing);
+// let someSting = 'Mama ima momu'
+// let counter = 0;
+// for (i = 0; i < someSting.length; i++) { 
+//   if(someSting[i]=== 'm' || someSting[i] === 'M'){
+//     counter++
+//   }
+// }
+// console.log(counter);
+//==================================================================
+// let something = 'bla1,123'
+// let counter = 0;
+// for (let i = 0; i < something.length; i++) {
+//   if(something[i].toLocaleLowerCase() !== something[i].toUpperCase()){
+//     counter++
+//   }
+// }
+// console.log(counter);
+// //=====================================================================
+// let something = 'AaBbCcDddd'
+// let counter = 0;
+// for (let i = 0; i < something.length; i++) {
+//     if(something[i] !== something[i].toUpperCase()){
+//       counter ++
+//     }
+// }
+// // console.log(counter);
+// let counter2 = 0;
+// for (let i = 0; i < something.length; i++) {
+//   if(something[i] !== something[i].toLowerCase()){
+//     counter2++
+//   }
+// }
+// // console.log(counter2);
+// if(counter2 > counter){
+//   console.log('velikih slovai ma vise a ima ih',counter2)
+// }else{
+//   console.log('malih slova ima vise a ima ih',counter);
+// }
+//===============================================================================
+
+// let polindrom = 'anavolimilovana'
+
+// for (i = polindrom.length - 1; i >= 0; i--) {
+//   // console.log(polindrom[i]);
+// }
+// for( y = 0; y < polindrom.length; y++) {
+//   // console.log(polindrom[y]);  
+// }
+// if(polindrom[i] == polindrom[y]){
+//   console.log('polindrom su')
+// }else{
+//   console.log('nisu');
+// }
+//=====================================================================

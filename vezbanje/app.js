@@ -4767,3 +4767,37 @@ let fetching = ()=>{
 }
 fetching()
 
+//====================================================================
+
+// let someFetchs = ()=>{
+//   fetch('https://jsonplaceholder.typicode.com/todos')
+//   .then((fetchs)=> fetchs.json())
+//   .then((arg)=>{
+//     console.log(arg)
+//     const parniId = arg.filter((el)=> el.id % 2 === 0);
+//     console.log(parniId)
+//     const completedTasks = parniId.filter((el)=> el.completed === true)
+//     console.log(completedTasks)
+//   })
+//   }
+// someFetchs()
+//=============================================================================
+
+// let someFetchs = ()=>{
+//   fetch('https://jsonplaceholder.typicode.com/todos')
+//   .then((fetchs)=> fetchs.json())
+//   .then((json)=>{
+//     console.log(json);
+//     const parniBrojevi = json.filter((el)=> el.id % 2 === 0)
+//     console.log(parniBrojevi)
+//     return parniBrojevi
+//   })
+//     .then((filiteredArray)=>{
+//     // console.log(filiteredArray);
+//     const completed = filiteredArray.filter((el)=> el.completed === true)
+//     console.log(completed);
+//   })
+// }
+// someFetchs()
+// // BEZ OVOG RETURN parniBrojevi ne bih mogao dalje da idem jer ispod ne preuzma ovaj donji niz
+

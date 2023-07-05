@@ -4686,3 +4686,84 @@ console.log(sortingDogs);
 //   console.log('nisu');
 // }
 //=====================================================================
+// const prviPromis = new Promise ((res,rej)=>{
+//   setTimeout(() => {
+//   let age = prompt('unesi godine');
+// if(age >=18){
+// res(age)
+// }else{
+// rej(age)
+// }
+// },1000);
+// })
+// prviPromis.then((el) => console.log(el)).catch(()=> console.log('ovo je greska'))
+
+//=========================================================================
+// const prviPromis = new Promise ((res,rej)=>{
+//   setTimeout(() => {
+//   let age = prompt('unesi godine');
+// if(age >=18){
+// res(age)
+// }else{
+// rej(age)
+// }
+// },500);
+// })
+
+// something = prviPromis.then((el)=> console.log(el))
+// something.catch(()=> console.log('ovo je greska'))
+//=====================================================================
+
+// function ninth(){
+//   setTimeout(() => {
+//     tenth()
+//   }, 1000);
+// }
+
+// function tenth(){
+//   console.log('bla');
+// }
+// tenth()
+
+//====================================================================
+
+// const niz=[
+  //   'apple',
+  //   'bannana',
+  //   ['apple','mango'],
+  //   {fruits:'apple', vegetables:'carrot'}
+  // ]
+  // counter = 0
+  // niz.forEach(element => {
+    //   if(element === 'apple'){
+      //     counter ++
+      //   }
+      // });
+      // console.log(counter);
+//=============================================================================
+      // const fetchData = ()=>{
+      //   fetch('https://jsonplaceholder.typicode.com/todos')
+      //   .then(response=> response.json())
+      //   .then((json)=>{
+      //     console.log(json);
+      //     return json.filter((el)=> el.id % 2 === 0 )
+      //   }).then((filteredArray)=> {
+      //     console.log(filteredArray);
+      //     return filteredArray.filter((el)=> el.completed === true)
+      //   })
+      //   .then((completedTodos)=> console.log(completedTodos))
+      // }
+      // fetchData()
+      //==================================================================
+//========================================================================
+let fetching = ()=>{
+  fetch('https://jsonplaceholder.typicode.com/todos')
+  .then((arg)=> arg.json())
+  .then((json)=>{
+    const filtriranje = json.filter((el)=> el.id % 2 === 0);
+    console.log(filtriranje);
+  })
+  .catch(()=> console.log('Doslo je do greske'))
+}
+fetching()
+

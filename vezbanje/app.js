@@ -4801,3 +4801,90 @@ fetching()
 // someFetchs()
 // // BEZ OVOG RETURN parniBrojevi ne bih mogao dalje da idem jer ispod ne preuzma ovaj donji niz
 
+========================================================================================
+// let someFetching = ()=>{
+//   fetch('https://jsonplaceholder.typicode.com/todos')
+//   .then((json)=> json.json())
+//   .then((log)=>{
+//     console.log(log)
+//     const filtriraniNiz = log.filter((el)=> el.id % 2 === 0)
+//     console.log(filtriraniNiz);
+//     return filtriraniNiz
+//   })
+//   .then((filtriraniNiz)=>{
+//     completedArray = filtriraniNiz.filter((el)=> el.completed === true)
+//     console.log(completedArray);
+//   })
+// }
+// someFetching()
+//==========================================================================
+// let maindiv = document.querySelector('.maindiv')
+// let buton = document.querySelector('.buton')
+// let img = document.querySelector('.img')
+// // someFetching = ()=>{
+//   fetch(`https://api.thecatapi.com/v1/images/search`)
+//   .then((fetchh)=> fetchh.json())
+//   .then((json)=>{
+//     let slika = (json[0].url)
+//     console.log(slika); 
+//     img.src = slika
+//     return slika
+//   })
+//   }
+// buton.addEventListener('click',(ev)=>{
+//   ev.preventDefault()
+//   someFetching()
+// })
+// someFetching()
+
+// let someFetching = ()=>{
+//   fetch(`https://api.thecatapi.com/v1/images/search`)
+//   .then((fetchh)=>fetchh.json())
+//   .then((arg)=>{
+//     console.log(arg)
+//     let slika = arg[0].url
+//     console.log(slika);
+//     img.src = slika
+//     return slika
+//   })
+// }
+// buton.addEventListener('click',(ev)=>{
+//   ev.preventDefault()
+
+//   someFetching()
+// })
+
+// someFetching()
+//======================================
+// let someFetching = ()=>{
+//   fetch(`https://api.thecatapi.com/v1/images/search`)
+//   .then((fetchh)=> fetchh.json())
+//   .then((arg)=>{
+//     // console.log(arg)
+//     const slika = arg[0].url
+//     // console.log(slika)
+//     img.src = slika
+//     return slika
+//   })
+// }
+// buton.addEventListener('click',(ev)=>{
+//   ev.preventDefault()
+//   someFetching()
+// })
+// someFetching()
+///====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

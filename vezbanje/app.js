@@ -4904,6 +4904,62 @@ fetching()
 // //==============================================================
 
 
+// //==============================================================
+
+// let someFetching = ()=>{
+//   fetch(`https://dummyjson.com/products`)
+//   .then((fetchh)=> fetchh.json())
+//   .then((arg)=>{
+//     console.log(arg)
+//     const product = arg.products
+//     const filteredArray = product.filter((arg)=> arg.stock > 69)
+//     console.log(filteredArray);
+//     return filteredArray
+//   })
+// }
+
+// someFetching()
+//======================================================================
+
+// let someFetching = ()=>{
+//   fetch(`https://dummyjson.com/carts`)
+//   .then((fetchh)=> fetchh.json())
+//   .then((arg)=>{
+//     console.log(arg);
+//     let prvi = arg.carts.map((arg)=> arg.products.filter((el)=> el.total > 53))
+//     console.log(prvi);
+//   })
+// }
+// someFetching()
+// // filtriraniArray = arg.carts.map((cart) => cart.products.filter((el) => el.total > 550))
+//=====================================================================
+// let someFetching = ()=>{
+//   fetch(`https://dummyjson.com/carts`)
+//   .then((fetch)=> fetch.json())
+//   .then((arg)=>{
+//     console.log(arg)
+//     filtriraniArray = arg.carts.map((el)=>el.products.filter((el)=>el.total > 100))
+//     console.log(filtriraniArray);
+//     return filtriraniArray
+//   })
+// }
+// someFetching()
+//=============================================================================
+
+let someFetching = ()=>{
+  fetch('https://dummyjson.com/products/search?q=phone')
+  .then((fetch)=> fetch.json())
+  .then((arg)=>{
+    console.log(arg);
+    let prvi = arg.products.map((el)=> el.images)
+    
+    console.log(prvi[0][0]);
+  })
+}
+someFetching()
+
+
+
 
 
 

@@ -1,3 +1,4 @@
+
 // a = 5;
 // console.log(a);
 // console.log(typeof a);
@@ -4946,19 +4947,35 @@ fetching()
 // someFetching()
 //=============================================================================
 
-let someFetching = ()=>{
-  fetch('https://dummyjson.com/products/search?q=phone')
-  .then((fetch)=> fetch.json())
-  .then((arg)=>{
-    console.log(arg);
-    let prvi = arg.products.map((el)=> el.images)
+// let someFetching = ()=>{
+//   fetch('https://dummyjson.com/products/search?q=phone')
+//   .then((fetch)=> fetch.json())
+//   .then((arg)=>{
+//     console.log(arg);
+//     let prvi = arg.products.map((el)=> el.images)
     
-    console.log(prvi[0][0]);
-  })
-}
-someFetching()
-
-
+//     console.log(prvi[0][0]);
+//   })
+// }
+// someFetching()
+//======================================================================================================
+// const img = document.querySelector('.img')
+// // const buton = document.querySelector('.buton')
+// // let someFetching = ()=>{
+// //   fetch(`https://dummyjson.com/products/search?q=phone`)
+// //   .then((fetch)=> fetch.json())
+// //   .then((arg)=>{
+// //     console.log(arg);
+// //     let image = arg.products.map((el)=> el.images)
+// //     // console.log(image[0][1]);
+// //     img.src = image[0][1]
+// //     return image
+// //   })
+// // }
+// // buton.addEventListener('click',(ev)=>{
+// //   ev.preventDefault()
+// //   someFetching()
+// // })
 
 
 

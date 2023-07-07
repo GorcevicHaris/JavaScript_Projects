@@ -4875,6 +4875,33 @@ fetching()
 ///====================================================================
 
 
+// function delay(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// async function main() {
+//   console.log("Početak");
+  
+//   await delay(2000); // Simulacija čekanja 2 sekunde
+  
+//   console.log("Kraj");
+// }
+
+// main();
+// //===========================================
+// function delay(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// console.log("Početak");
+
+// delay(800)
+
+//   .then(() => {
+//     console.log("Kraj");
+//   }).catch(()=>console.log('nece'))
+
+// //==============================================================
 
 
 

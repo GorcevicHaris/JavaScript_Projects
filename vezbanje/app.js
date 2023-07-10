@@ -4976,7 +4976,121 @@ fetching()
 // //   ev.preventDefault()
 // //   someFetching()
 // // })
+//============================================================================
+// const niz=[
+// 'apple',
+// 'bannana',
+// ['apple','mango'],
+// {fruits:'apple', vegetables:'carrot'}
+// ]
+// pomocna1 = 0
+// niz.forEach(element => {
+//   if(element === 'apple'){
+//     pomocna1 ++
+//   }
+//   console.log(pomocna1);
+// });
 
+// something1= Object.values(niz)
+// pomocna2 = 0
+// something2 = something1.filter((el)=>{
+//   if(el == 'apple'){
+//     pomocna2++
+//   }
+//   console.log(pomocna2);
+// })
+
+// let pomocna3 = 0
+// let druginiz = niz[2]
+// for (y = 0; y < druginiz.length; y++) {
+//   if(druginiz[y] === 'apple'){
+//     pomocna3++
+//   }
+//   console.log(pomocna3);
+// }
+// const finish = (pomocna1 + pomocna1 + pomocna3)
+// console.log(finish);
+//==============================================================================
+// const matrica = [
+//   1,
+//   [1,2,3,1,1,1,1,3,4,5,7,7,],
+//   [4,5,6],
+//   [7,8,9],
+//   [1,2,3]
+// ]
+// const bigfunction = matrica.map((bigel) =>
+//    bigel[0].map((el,i)=>{
+//     if(i % 2 ===0){
+//       return el * 0
+//     }else{
+//       return el * 100
+//     }
+//   }
+//   ))
+// console.log(bigfunction);
+//=============================================================
+//includes
+// let array = [1,2,3,4]
+// console.log(array.includes());
+//find
+//==============================================
+// const str = "Hello, World!";
+
+// // Provjera da li se string podudara sa određenim obrascem
+// const pattern1 = /Hello/;
+// console.log(pattern1.test(str)); // Output: true
+
+// // Pronalaženje prvog podudaranja u stringu
+// let some = /0/
+// const pattern2 = str.match(some)
+// console.log(pattern2);
+//======================================================
+// var number = (busStops)=>{
+//   let something = busStops.map((bigel)=>{
+//     bigel.map((el,i)=>{
+      
+//     })
+//   })
+// }
+//===========================================
+// let matrica = [
+//   [10,0],
+//   [3,5],
+//   [5,8]
+// ]
+// let ulaznici1 = 0
+// let izlaznici1 = 0
+// let pomocna1 = 0
+// for (i = 0; i < matrica.length; i++) {
+//   ulaznici1 += matrica[i][0] 
+//   izlaznici1 += matrica[i][1]
+//   pomocna1 = ulaznici1 - izlaznici1
+// }
+// console.log(pomocna1);
+// //=============================================================
+// const fetchingData = async()=>{
+//   const data = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//   const result = await data.json()
+//   const filtered = await result.filter((el)=> el.id % 2 === 0)
+//   console.log(result);
+// }
+
+// const  fetchingDAta = async()=>{
+//   let broj = prompt('unesite broj')
+//   const data  = await fetch(`https://jsonplaceholder.typicode.com/posts/${broj}/comments`)
+//   const result = await data.json()
+//   console.log(result);
+// }
+// fetchingDAta()
+//================================================================
+
+// const fetchingComments = async (arg,arg2,email)=>{
+//   const comments = await fetch
+//   (`https://jsonplaceholder.typicode.com/comments?postId=${arg}&Id=${arg2}&email=${email}`)
+//   const result = await comments.json()
+//   console.log(result);
+// };
+// fetchingComments(5,2,"Noemie@marques.me")
 
 
 

@@ -5091,6 +5091,61 @@ fetching()
 //   console.log(result);
 // };
 // fetchingComments(5,2,"Noemie@marques.me")
+// let fetchingData = async(id,postid,email)=>{
+//   something1 = prompt('neki id')
+//   const data = await fetch(`https://jsonplaceholder.typicode.com/comments?id=${something1}`);
+//   const result = await data.json();
+//   console.log(result);
+// }
+// fetchingData()
+
+//=================================================================================
+// let fetching = async()=>{
+//   let data = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=10`)
+//   let someJson = await data.json()
+//   console.log(someJson);
+// }
+// fetching()
+
+//============================================================================
+// let fetching = async()=>{
+//   let some = await fetch(`https://dummyjson.com/products`)
+//   let json = await some.json()
+//   console.log(json);
+//   const sslika = json.products.map((el)=> el).map((el)=> el.images)
+//   console.log(slika[0][0])
+// }
+// fetching()
+//=============================================================================
+// let fetching = ()=>{
+//   fetch(`https://dummyjson.com/products`)
+//   .then((fetchh)=> fetchh.json())
+//   .then((arg)=>{
+//     console.log(arg);
+//     let slika = arg.products.map((el)=> el).map((el)=> el.images)
+//     console.log(slika[0][0]);
+//   })
+// }
+// fetching()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

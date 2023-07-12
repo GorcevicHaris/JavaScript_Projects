@@ -5127,7 +5127,45 @@ fetching()
 //   })
 // }
 // fetching()
+//=============================================================================
+// let fetching = ()=>{
+//   fetch(`https://dummyjson.com/products`)
+//   .then((fetchh)=> fetchh.json())
+//   .then((arg)=>{
+//     console.log(arg);
+//     let slika = arg.products.map((el)=> el).map((el)=> el.images)
+//     console.log(slika[0][0]);
+//   })
+// }
+// fetching()
+//================================================================
+// let matrica = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// for ( i = 0; i < matrica.length; i++) {
+//   // console.log(matrica[i]);  
+//   for (y = 0; y < matrica[i].length; y++) {
+//     if(i + y === 2){
+//       console.log(matrica[i][y]);
+//     }
+//   }
+// }
+//=============================================================================
+// let matrica = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
 
+// for ( i = 0; i < matrica.length; i++) {
+//   for (y = 0; y < matrica[i].length; y++) {
+//     if(matrica[i][y] === 3 || matrica[i][y] === 5 || matrica[i][y] === 7){
+//       console.log(matrica[i][y]);
+//     }
+//   }
+// }
 
 
 

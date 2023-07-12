@@ -5223,6 +5223,96 @@ fetching()
 //     }
 //   }
 // }
+//==========================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// let lookingNumber = [1,3,8]
+// for (i = 0; i < array.length; i++) {
+//   for (y = 0; y < array.length; y++) {
+//     let element = array[i][y]
+//     if(lookingNumber.includes(element)){
+//       console.log(element);
+//   }
+//   }
+// }
+//============================================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+
+// for ( i = 0; i < array.length; i++) {
+//   let element = array[i]  
+//   let something = element.find((el)=> [1,4,8].includes(el))
+//   console.log(something);
+// }
+//OVO ARRAY[I] JE SVAKI NIZ A FIND METODA MOZE SAMO JEDAN DA UZME BROJ ZNACI IZ SVAKOG NIZA
+// PO JEDAN
+//=======================================================================
+// let array = [
+//   'mango',
+//   'apple',
+//   'apple',
+//   'apple',
+//   'apple',
+//   ['banana','apple','apple'],
+//   {fruit:'apple',name:'grle',juice:'apple'}
+// ]
+// let counter1 = 0
+// let something = Object.values(array)
+// //console.log(something);
+// let some1 = something.filter((el)=>{
+//   if(el === 'apple'){
+//     counter1++
+//   }
+// })
+// // console.log(counter1);
+
+// let counter2 = 0
+// let something2 = array.find((el)=>Array.isArray(el))
+// // console.log(something2);
+// let some2 = something2.filter((el)=>{
+//   if(el === 'apple'){
+//     counter2++
+//   }
+// })
+// // console.log(counter2);
+
+// let counter3 = 0 
+// let obj = array.find(el => typeof el === 'object' && !Array.isArray(el));
+// let some = Object.values(obj)
+// //console.log(some);
+// let something3 = some.filter((el)=>{
+//   if(el === 'apple'){
+//     counter3++
+//   }
+// })
+// // console.log(counter3);
+// let finishExercises = counter1 + counter2 + counter3 
+// console.log(finishExercises);
+// //ZAVRSEN ZADATAK SA APPLE
+// //================================================================
+// let array1 = [1, 2, 3];
+// let array2 = ['apple', 'banana', 'cherry'];
+// let obj = {fruit: 'apple', name: 'grle'};
+// let number = 42;
+
+// console.log(Array.isArray(array1)); // Ispis: true
+// console.log(Array.isArray(array2)); // Ispis: true
+// console.log(Array.isArray(obj)); // Ispis: false
+// console.log(Array.isArray(number)); // Ispis: false
+// let element1 = array[5]
+// let counter2 = 0
+// for ( y = 0; y < array.length; y++) {
+//   if(element1[y] === 'apple'){
+//     counter2 ++
+//   }
+// }
+// console.log(counter2);
 
 
 

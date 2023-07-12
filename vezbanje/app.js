@@ -5167,7 +5167,62 @@ fetching()
 //   }
 // }
 
+//===============================================================================
+// let matrica = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
 
+// for (i = 0; i < matrica.length; i++) {
+//   let something = matrica[i].find((el)=> [1,4,8].includes(el))
+//   console.log(something);
+// }
+//=====================================================================
+// let matrica = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
+// for (i = 0; i < matrica.length; i++) {
+//   for (y = 0; y < matrica[i].length; y++) {
+//     let element = matrica.find((el)=> [1,2,3].includes(el))    
+//   }
+// }
+//========================================================================
+// let element = matrica[0].filter((el)=> [1,2,3].includes(el))
+// console.log(element);
+//==============================================================
+// let matrica = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
+// let findNumber = [3,5,9]
+// for (i = 0; i < matrica.length; i++) {
+//   for (y = 0; y < matrica[i].length; y++) {
+//     let element = matrica[i][y]
+//     if(findNumber.includes(element)){
+//       console.log(element);
+//   }
+//   }
+// }
+//includes OVDE IMAMO AKO U OVAj element ima ovaj findnumber onda se ispusje element ti brojevi
+//u koje je findnumber
+// let array = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
+// let lookingNumber = [2,4,5]
+// for (i = 0; i < array.length; i++) {
+//   for (y = 0; y < array.length; y++) {
+//     let something = array[i][y]
+//     if(lookingNumber.includes(something)){
+//       console.log(something);
+//     }
+//   }
+// }
 
 
 

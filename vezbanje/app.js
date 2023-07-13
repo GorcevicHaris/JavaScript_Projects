@@ -5314,7 +5314,97 @@ fetching()
 // }
 // console.log(counter2);
 
+//=================================================================
+// let matrica = [
+//   [1,2,3,],
+//   [4,5,6],
+//   [7,8,9]
+// ]
 
+// for (i = 0; i < matrica.length; i++) {
+//   let element = matrica[i]
+//   let something = element.find((el)=> [1,5,7].includes(el))
+//   console.log(something);
+// }
+//=============================================
+// let matrica = [
+//   [1,2,3,],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// for (i = 0; i < matrica.length; i++) {
+//   for (let y = 0; y < matrica[i].length; y++) {
+//     let element = matrica[i][y]
+//     if([2,5,8].includes(element)){
+//       console.log(element);
+//     }
+//   }
+// }
+//===========================================================
+// class Macka{
+//   ime;
+//   prezime;
+//   godine
+//   constructor(name,username,age){
+//     this.ime = name;
+//     this.prezime = username;
+//     this.godine = age;
+//   }
+//   get ime(){
+//     return this.ime
+//   }
+//   set novoIme(newName){
+//     this.ime = newName
+//   }
+// }
+
+// something1 = new Macka('mauri','ciuricicio','skoro 3')
+// console.log(something1);
+// console.log(something1.ime);
+// something1.novoIme = 'ricoo'
+// console.log(something1);
+//GET NAM SLUZI SAMO DA BI NEKU VREDNOST IZ OBJEKTA VRATILI I NPR KONZOLOGALI JE I VRATILI 
+// SAMO TU JEDNU VREDNOST
+//SET NAM SLUZI DA BI PROMENILI NESTO IZ DATOG OBJEKTA 
+//=========================================================================================
+// class Macka{
+//   ime;
+//   prezime;
+//   godine;
+//   constructor(name,username,age){
+//     this.ime = name;
+//     this.prezime = username;
+//     this.godine = age;
+//   }
+// }
+
+// class Dog extends Macka{
+//   rep;
+//   constructor(name,username,age,tail){
+//     super(name,username,age,tail)
+//     this.rep = tail
+//   }
+// }
+// let something1 = new Dog('mauri','cicio','3','yes')
+// console.log(something1);
+//=========================================================
+// class Pet{
+//   constructor(ime,prezime){
+//     this.ime = ime
+//     this.prezime = prezime
+//   }
+// }
+// class Dog extends Pet{
+//   constructor(ime,prezime,age){
+//     super(ime,prezime,age)
+//     this.age = age
+//   }
+// }
+// let something1 = new Dog('rici','ricio','3')
+// console.log(something1);
+// let something2 = new Pet('ime','prezime',3)
+// console.log(something2);
+//=============================================================
 
 
 

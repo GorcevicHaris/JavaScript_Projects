@@ -5405,7 +5405,41 @@ fetching()
 // let something2 = new Pet('ime','prezime',3)
 // console.log(something2);
 //=============================================================
+//=============================================================
+// const vezbaNizova = [
+//   [4, 12, 100, 3],
+//   [2, 5, 7, 9, 3],
+//   [11, 53, 75, 87],
+//   [3],
+//   [4],
+// ];
+// for ( i = 0; i < vezbaNizova.length; i++) {
+//   const parniBrojevi = vezbaNizova[i]
+//   let findingParne  = parniBrojevi.filter((el)=> el % 2 === 0 )
+//   console.log(findingParne);
+// }
+// for (i = 0; i < vezbaNizova.length; i++) {
+//   const neparniBrojevi = vezbaNizova[i]
+//   let  findingNeparne = neparniBrojevi.filter((el)=> el % 2 === 1)
+//   console.log(findingNeparne);
+// }
+// //FILTER SE MOZE PRIMENITI SAMO NA NIZ
+//=========================================================================
 
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// let something1 = array.map((bigel)=>{
+//   let something2 = bigel.filter((el)=> el % 2 === 0)
+//   console.log(something2);
+// })
+
+// let something3 = array.map((bigel)=>{
+//   let something4 = bigel.filter((el)=> el % 2 === 1)
+//   console.log(something4);
+// })
 
 
 

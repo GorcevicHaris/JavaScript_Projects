@@ -5473,8 +5473,25 @@ fetching()
 //   return pushArray
 // }
 // console.log(someFunction(array,someCounters));
+//=========================================================================
+// let array = [1,2,3,4]
+// let someFunction = (niz,counter)=>{
+//   let pushArray = [];
+//   for (i = 0; i < niz.length; i++) {
+//     pushArray.push(niz[i] + counter)
+//   }
+//   return pushArray
+// }
+// console.log(someFunction(array,3));
+// //================================================================================
+// let array = [1,2,3,4]
 
-
+// const pushArray = []
+// for (let i = 0; i < array.length; i++) {
+//   const element = array[i];
+//   pushArray.push(element + 5 )
+// }
+// console.log(pushArray);
 
 
 

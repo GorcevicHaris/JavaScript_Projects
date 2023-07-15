@@ -5492,8 +5492,24 @@ fetching()
 //   pushArray.push(element + 5 )
 // }
 // console.log(pushArray);
-
-
+//==============================================================
+// let array = [1,2,3,4,5]
+// let counter = 0
+// for (i = 0; i < array.length; i++) {
+//   counter+=array[i]
+// }
+// console.log(counter);
+//===============================================================
+// let array = [1,2,3,4,5,6]
+// let counter = 0
+// for (i = 0; i < array.length; i++) {
+//   const element = array[i]
+//   if(element % 2 === 0){
+//     // console.log(element);
+//     counter+=element
+//   }
+// }
+// console.log(counter);
 
 
 

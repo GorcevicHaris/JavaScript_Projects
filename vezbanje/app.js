@@ -5533,10 +5533,31 @@ fetching()
 // }
 
 // fething()
-
-
-
-
+//============================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// for (i = 0; i < array.length; i++) {
+//   for (y = 0; y < array.length; y++) {   
+//     const element = array[i][y]
+//     if([1,2,3].includes(element)){
+//       console.log(element);
+//     }
+//   }
+// }
+//===========================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// for (i = 0; i < array.length; i++) {
+//   const element = array[i] 
+//   let something1 = element.find((el)=> [1,4,8].includes(el))
+//   console.log(something1);
+// }
 
 
 

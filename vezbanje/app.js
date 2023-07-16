@@ -5558,6 +5558,58 @@ fetching()
 //   let something1 = element.find((el)=> [1,4,8].includes(el))
 //   console.log(something1);
 // }
+//============================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// for (i = 0; i < array.length; i++) {
+//   for (y = 0; y < array.length; y++) {   
+//     const element = array[i][y]
+//     if([1,2,3].includes(element)){
+//       console.log(element);
+//     }
+//   }
+// }
+//===========================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// for (i = 0; i < array.length; i++) {
+//   const element = array[i] 
+//   let something1 = element.find((el)=> [1,4,8].includes(el))
+//   console.log(something1);
+// }
+//=========================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// let something1 = array.map((bigel)=>{
+//   let something2 = bigel.map((el)=>{
+//     let something3 = el
+//     if([1,4,5].includes(something3)){
+//       console.log(something3);
+//     }
+//   })
+  
+// })
+// console.log(something1);
+//===============================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// let something1 = array.map((bigel)=>{
+//   let something2 = bigel
+//   let something3 = something2.find((el)=> [1,5,7].includes(el))
+//   console.log(something3);
+// })
 
 
 

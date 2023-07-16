@@ -5510,7 +5510,29 @@ fetching()
 //   }
 // }
 // console.log(counter);
+//=============================================================
+// let array = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+// let something = array.map((bigel)=>{
+//   let something2 = bigel.filter((el)=> el % 2 === 0)
+//   console.log(something2);
+// })
+//===================================================================
+// //====================================================================
+// let fething = ()=>{
+//   fetch(`https://dummyjson.com/products/category/smartphones`)
+//   .then((fetch)=> fetch.json())
+//   .then((arg)=>{
+//     console.log(arg);
+//     const element = arg.products.map((el)=> el.images[0]).filter((el,i)=> i % 2 == 0)
+//     console.log(element[0]);
+//   })
+// }
 
+// fething()
 
 
 

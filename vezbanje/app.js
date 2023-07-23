@@ -5610,7 +5610,38 @@ fetching()
 //   let something3 = something2.find((el)=> [1,5,7].includes(el))
 //   console.log(something3);
 // })
+//======================================================
+// const osoba = {
+//   name:'haris',
+//   username:'gorcevic',
+//   profession:'js',
+//   nekaOsobina:[4,19,10,'los'],
+//   vestine:{
+//     html:'css',
+//     js:'josgore',
+//     batHtml(){
+//       return this.html
+//     }
+//   }
 
+// }
+// console.log(osoba.vestine.batHtml());
+// //========================================================
+// const osoba = {
+//   name:'haris',
+//   username:'gorcevic',
+//   profession:'js',
+//   nekaOsobina:[4,19,10,'los'],
+//   vestine:{
+//     html:'css',
+//     js:'josgore',
+//     batHtml(){
+//       return this.html
+//     }
+//   }
+
+// }
+// console.log(osoba.nekaOsobina[0]);
 
 
 

@@ -5683,6 +5683,71 @@ fetching()
 //         link.href = `https://github.com/${name}`
 //     })
 // })
+//==========================================================
+// let array = [0, 2, 3, 4, 5, 6, 7, 0];
+// let counter = array.length - 1;
+// for (let i = 0; i < array.length; i++) {
+//   console.log(i, counter);
+//   if (array[i] + array[counter] == 0) {
+//     console.log(true);
+//   }
+//   counter--;
+//   console.log(false);
+// }
+//===================================================
+// let array = "aaAAaassS";
+// let counter = 0;
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i].toUpperCase() != array[i].toLowerCase()) {
+//     counter++;
+//   }
+// }
+// console.log(counter);
+//===================================================
+// const obj = [
+//   {
+//     ime: "harsko",
+//     prezime: "gorco",
+//   },
+// ];
+// const keys = Object.keys(obj);
+// keys.forEach((fieldName) => {
+//   const niz = [];
+//   if (!obj[fieldName].length) {
+//     niz.push(fieldName);
+//     console.log(niz);
+//   }
+// });
+//========================================================
+// let array = [1, 2, 3, 4, 5];
+// let secondArray = [3, 5, 6];
+// array.forEach((element) => {
+//   if (secondArray.includes(element)) {
+//     console.log(element);
+//   }
+// });
+//=============================================
+// //OVO JE BOLJI PRIMER OD GORNJEG
+// let array = [1, 2, 3, 4, 5];
+// let secondArray = [3, 5, 6];
+// array.forEach((element) => {
+//   if ([1, 2, 6].includes(element)) {
+//     console.log(element);
+//   }
+// });
+// //========================================
+// let array = [1, 2, 3, 4, 5];
+// let something = array.find((el) => [1, 3, 6].includes(el));
+// console.log(something);
+// //   let something = matrica[i].find((el)=> [1,4,8].includes(el))
+//=======================================================
+let array = [1, 2, 3];
+array.forEach((element) => {
+  if ([1, 2, 5].includes(element)) {
+    console.log(element);
+  }
+});
+
   
 
 

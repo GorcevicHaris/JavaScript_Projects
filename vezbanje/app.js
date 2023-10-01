@@ -5749,8 +5749,31 @@ array.forEach((element) => {
 });
 
   
+//=========================================
+// function faktorijel(n) {
+//   if (n == 0) {
+//     return 1;
+//   } else {
+//     return n * faktorijel(n - 1);
+//   }
+// }
 
+// console.log(faktorijel(5));
+//=========================================================
+let ime = "ana";
 
+for (i = ime.length - 1; i >= 0; i--) {
+  console.log(ime[i]);
+}
+for (y = 0; y < ime.length; y++) {
+  console.log(ime[y]);
+}
+if (ime[i] === ime[y]) {
+  console.log("polindrom su ");
+} else {
+  console.log("nisu");
+}
+///==================================================
 
 
 

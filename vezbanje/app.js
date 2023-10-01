@@ -5774,6 +5774,27 @@ if (ime[i] === ime[y]) {
   console.log("nisu");
 }
 ///==================================================
+//=========================================================
+// let ime = "ana";
+
+// for (y = 0; y < ime.length; y++) {
+//   console.log(ime[y], "prvi");
+// }
+// for (i = ime.length - 1; i >= ime[0]; i--) {
+//   console.log(ime[i], "drugi");
+// }
+
+// if (ime[i] === ime[y]) {
+//   console.log("polindrom su ");
+// } else {
+//   console.log("nisu");
+// }
+///==================================================
+
+let ime = "sana";
+let array = [];
+array.push(ime);
+console.log(ime === ime.split("").reverse().join("") ? "jeste" : "nije");
 
 
 

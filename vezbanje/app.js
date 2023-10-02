@@ -5791,12 +5791,15 @@ if (ime[i] === ime[y]) {
 // }
 ///==================================================
 
-let ime = "sana";
-let array = [];
-array.push(ime);
-console.log(ime === ime.split("").reverse().join("") ? "jeste" : "nije");
+// let ime = "sana";
+// let array = [];
+// array.push(ime);
+// console.log(ime === ime.split("").reverse().join("") ? "jeste" : "nije")
 
-
+//===============================================
+// let ime = ["ha,n,a"];
+// let im2 = "hana";
+// console.log(im2.split("").join(""));
 
 
 

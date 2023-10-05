@@ -5801,7 +5801,26 @@ if (ime[i] === ime[y]) {
 // let im2 = "hana";
 // console.log(im2.split("").join(""));
 
+//==========================================================================
+// counter = 1;
+// for (i = 1; i <= 5; i++) {
+//   counter *= i;
+//   console.log(counter);
+//
 
+// var n = 5; // Broj čijeg faktorijela želite izračunati
+// var rezultat = 1;
+
+// if (n === 0 || n === 1) {
+//   rezultat = 1;
+// } else {
+//   for (i = 2; i <= n; i++) {
+//     rezultat *= i;
+//   }
+// }
+
+// console.log("Faktorijel broja " + n + " je " + rezultat);
+//============================================================
 
 
 
